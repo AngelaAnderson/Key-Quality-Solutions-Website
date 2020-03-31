@@ -1,0 +1,152 @@
+header {
+  align-items: center;
+  color: #024a69;
+  border: 1px solid red;
+  display: flex;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  height: 45px;
+  justify-content: space-between;
+  line-height: 16px;
+  padding: 0px 450px;
+}
+
+h1 {
+  color: #f2ecdb;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  line-height: 136.4%;
+}
+
+h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 124.4%;
+}
+
+h4 {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+h5 {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 16px;
+}
+
+h6 {
+  color: #f2ecdb;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+footer {
+  background: #024a69;
+  height: 100%;
+}
+
+footer .footer_body {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px;
+  margin-bottom: 30px;
+}
+
+.footer_about,
+.footer_contact,
+.footer_services,
+.about_blog {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  width: 300px;
+}
+
+footer .footer_about img {
+  border: 1px solid white;
+  height: 100px;
+  margin-bottom: 15px;
+  width: 216px;
+}
+
+footer hr {
+  border: 1px solid #e97770;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+footer p {
+  color: #eaeaec;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+footer .pair {
+  align-items: center;
+  display: flex;
+}
+
+footer .pair img {
+  border: 1px solid white;
+  height: 15px;
+  margin-right: 10px;
+  width: 15px;
+}
+
+footer .pair p {
+  height: 15px;
+}
+
+footer .footer_bottom {
+  align-items: center;
+  color: #f2ecdb;
+  background: #e97770;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  height: 40px;
+  justify-content: center;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.footer_img {
+  height: 30px;
+  width: 30px;
+}

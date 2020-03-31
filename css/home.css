@@ -1,0 +1,242 @@
+.CTA {
+  background: #e97770;
+  border: 1px solid #e97770;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #eaeaec;
+  font-size: 16px;
+  height: 43.1px;
+  position: fixed;
+  right: 0;
+  top: 600px;
+  width: 176px;
+}
+
+section {
+  border: 1px solid blue;
+  height: 500px;
+}
+
+section .container_one,
+section .container_three {
+  background-color: #024a69;
+  border: 1px solid green;
+  height: 100%;
+  width: 57%;
+}
+
+section .container_one .container_group_one,
+section .container_three .container_group_three {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  padding-top: 70px;
+  width: 550px;
+}
+
+section button {
+  background: #e97770;
+  border: 1px solid #e97770;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #eaeaec;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 42px;
+  left: 900px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 400px;
+  width: 124px;
+}
+
+.container_one .container_group_one h1 {
+  border: 1px solid orange;
+  color: #f2ecdb;
+  height: 144px;
+  margin-bottom: 150px;
+  width: 422px;
+}
+
+.container_group_one .group_one {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 422px;
+}
+
+.container_group_one .group_one p {
+  color: #eaeaec;
+  margin-bottom: 20px;
+}
+
+.container_group_one .group_one hr {
+  border: 1px solid #f2ecdb;
+  width: 100%;
+}
+
+.container_group_one .group_one .social_icons img {
+  border: 1px solid red;
+  height: 20px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+body .focus_areas {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+body .focus_areas h3 {
+  color: #e97770;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+
+body .focus_areas h2 {
+  color: #024a69;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+body .focus_areas .group_two {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  width: 938px;
+}
+
+body .focus_areas .box {
+  border: 1px solid orange;
+  text-align: left;
+  width: 180px;
+}
+
+.focus_areas .box img {
+  border: 1px solid black;
+  height: 48px;
+  margin-bottom: 20px;
+  width: 48px;
+}
+
+.focus_areas .box h5 {
+  color: #024a69;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.focus_areas .box p {
+  border: 1px solid red;
+  height: 44px;
+}
+
+.section_services {
+  height: 600px;
+}
+
+.container_three .container_group_three h1 {
+  margin-bottom: 15px;
+}
+
+.container_three .container_group_three p {
+  color: #eaeaec;
+  margin-bottom: 50px;
+}
+
+.container_group_three .service_offerings {
+  border: 1px solid white;
+  color: #eaeaec;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.service_offerings .column .service {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.service_offerings .column .service img {
+  border: 1px solid red;
+  height: 30px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.service_offerings .column .service h4 {
+  font-size: 18px !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body .blog_posts {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+body .blog_posts h3 {
+  color: #e97770;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+
+body .blog_posts h2 {
+  color: #024a69;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+body .blog_posts .group_three {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  width: 752px;
+}
+
+body .blog_posts .box {
+  border: 1px solid orange;
+  text-align: left;
+  width: 211px;
+}
+
+.blog_posts .box img {
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 122.99px;
+  margin-bottom: 40px;
+  width: 211px;
+}
+
+.blog_posts .box h5 {
+  color: #024a69;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.blog_posts .box p {
+  border: 1px solid red;
+  font-size: 10px;
+  line-height: 16px;
+  height: 44px;
+}
