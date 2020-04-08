@@ -14,22 +14,56 @@
   <body>
     <button class="CTA">Contact For A Quote!</button>
     <header>
-      <img src="" alt="" />
-      <h4>Home</h4>
-      <h4>About</h4>
-      <h4>Services</h4>
-      <h4>Resources</h4>
-      <h4>Contact</h4>
-      <img src="icons/search.svg" alt="" />
+      <img src="icons/logogmark_light.svg" alt="" />
+      <button class="dropbtn">Home</button>
+      <button onclick="dropDownFunction()" class="dropbtn">About</button>
+      <div id="dropdown" class="dropdown_about dropdown_menu">
+        <p>Mission & Values</p>
+        <p>KQS Leadership</p>
+      </div>
+      <button onclick="dropDownFunction()" class="dropbtn">Services</button>
+      <div class="dropdown_services dropdown_menu">
+        <div class="QMS">
+          <h5>Quality Management Services:</h5>
+          <br />
+          <p>Regulatory Requirements</p>
+          <p>Quality Management Systems</p>
+          <p>Trainings</p>
+        </div>
+        <hr />
+        <div class="QAS">
+          <h5>Quality Assurance Services:</h5>
+          <br />
+          <p>Change Control</p>
+          <p>Supplier Management</p>
+          <p>Risk Management</p>
+          <p>Non-Conformance</p>
+          <p>Audits / Inspections</p>
+        </div>
+      </div>
+      <button onclick="dropDownFunction()" class="dropbtn">Resources</button>
+      <div class="dropdown_resources dropdown_menu">
+        <p>Industry News</p>
+        <p>White Papers</p>
+      </div>
+      <button class="dropbtn">Contact</button>
+      <img src="icons/search.svg" class="resize" alt="" />
+      <div class="dropdown_search dropdown_menu">
+        <input type="text" placeholder="Search" />
+      </div>
     </header>
 
-    <section>
+    <section class="section_about">
       <button>About KQS</button>
       <div class="container_one">
         <div class="container_group_one">
-          <h1>Title</h1>
+          <h1>Helping Big Pharma Make The Digital Leap</h1>
           <div class="group_one">
-            <p>Paragraph</p>
+            <p>
+              Key Quality Solutions brings you new levels of quality and speed.
+              We’ll show you the digital possibilities that will scale your
+              business both rapidly and with ease.
+            </p>
             <hr />
             <div class="social_icons">
               <img src="icons/linkedin.svg" alt="" />
@@ -40,36 +74,55 @@
         </div>
       </div>
       <div class="container_two">
-        <img src="" alt="" />
+        <img src="imgs/homepage_img_one.svg" alt="" />
       </div>
     </section>
 
     <section class="focus_areas">
-      <h3>Sub -Title</h3>
-      <h2>Section Title</h2>
+      <h3>Industries</h3>
+      <h2>
+        Bringing specialized expertise to science and medical businesses <br />
+        looking to amp up their digital efﬁciency.
+      </h2>
       <div class="group_two">
         <div class="box">
           <img src="icons/biotech.svg" alt="" />
           <h5>Biotechnology</h5>
-          <p></p>
-        </div>
-
-        <div class="box">
-          <img src="icons/pharma.svg" alt="" />
-          <h5>Pharmaceuticals</h5>
-          <p></p>
+          <p>
+            As you roll out life-changing biotech developments, let us guide you
+            through the digital integration that will spur your manufacturing
+            while cutting out time and expenses.
+          </p>
         </div>
 
         <div class="box">
           <img src="icons/medical_devices.svg" alt="" />
           <h5>Medical Devices</h5>
-          <p></p>
+          <p>
+            We’ll show you digital advancements to improve your manufacturing
+            process and quickly get your product into the hands of patients and
+            healthcare professionals while maintaining regulatory standards.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="icons/pharma.svg" alt="" />
+          <h5>Pharmaceuticals</h5>
+          <p>
+            The input from KQS allows you to evolve within the industry while
+            maintaining complete compliance, implementing digital solutions, and
+            continuing to grow your business.
+          </p>
         </div>
 
         <div class="box">
           <img src="icons/cosmetics.svg" alt="" />
           <h5>Cosmetics</h5>
-          <p></p>
+          <p>
+            Our resourceful digital solutions and best practices can simplify
+            product testing and marketing as you introduce new cosmetic products
+            and continually meet the demands of your consumers.
+          </p>
         </div>
       </div>
     </section>
@@ -77,8 +130,11 @@
     <section class="section_services">
       <div class="container_three">
         <div class="container_group_three">
-          <h1>Title</h1>
-          <p>Paragraph</p>
+          <h1>Stay compliant, up your output, innovate for the future!</h1>
+          <p>
+            Digital know-how can speed up and simplify all parts of your <br />
+            operation. We’ll optimize every facet of your business.
+          </p>
           <div class="service_offerings">
             <div class="column">
               <div class="service">
@@ -127,43 +183,45 @@
         </div>
       </div>
       <div class="container_four">
-        <img src="" alt="" />
+        <img src="imgs/homepage_img_two.svg" alt="" />
       </div>
     </section>
 
     <section class="blog_posts">
-      <h3>Sub -Title</h3>
-      <h2>Section Title</h2>
+      <h3>Industry News</h3>
+      <h2>Read up on industry news and developments.</h2>
       <div class="group_three">
         <div class="box">
           <img src="" alt="" />
           <h5>Biotechnology</h5>
-          <p></p>
         </div>
 
         <div class="box">
           <img src="" alt="" />
           <h5>Pharmaceuticals</h5>
-          <p></p>
         </div>
 
         <div class="box">
           <img src="" alt="" />
           <h5>Medical Devices</h5>
-          <p></p>
         </div>
       </div>
     </section>
+    <script src="/javascript/main.js"></script>
   </body>
 
   <footer>
     <div class="footer_body">
       <div class="footer_about">
-        <img src="" alt="" />
-        <p>Paragraph</p>
+        <img src="icons/HL_KQS_Logo.svg" alt="" />
+        <p>
+          Helping healthcare companies build an optimized business through
+          interoperable digital systems that achieve heightened quality on a
+          global scale.
+        </p>
         <hr />
         <div class="pair">
-          <img src="" alt="" />
+          <img src="icons/copyright.svg" />
           <p>Key Quality Solutions</p>
         </div>
       </div>
@@ -225,9 +283,9 @@
       </div>
     </div>
 
-    <div class="footer_bottom pair">
-      <img class="footer_img" src="icons/ao_logo.svg" alt="" />
+    <div class="footer_bottom">
       <p>Web Design by Angel Oleathia</p>
+      <!-- <img class="footer_img" src="icons/ao_logo.svg" alt="" /> -->
     </div>
   </footer>
 </html>

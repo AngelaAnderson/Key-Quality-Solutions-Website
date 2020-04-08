@@ -1,26 +1,12 @@
-header {
-  align-items: center;
-  color: #024a69;
-  border: 1px solid red;
-  display: flex;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  height: 45px;
-  justify-content: space-between;
-  line-height: 16px;
-  padding: 0px 450px;
-}
-
+/* This section displays all the typographic information for each fornt scale. */
 h1 {
   color: #f2ecdb;
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 0.02em;
-  line-height: 136.4%;
+  line-height: 60px;
 }
 
 h3 {
@@ -30,15 +16,23 @@ h3 {
   font-size: 16px;
   letter-spacing: 0.05em;
   line-height: 124.4%;
+  text-transform: uppercase;
 }
 
-h4 {
+h4,
+.dropbtn {
+  border: none;
   font-family: Avenir;
   font-style: normal;
   font-weight: 200;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  outline: none;
+}
+
+.dropbtn {
+  color: #024a69;
 }
 
 h5 {
@@ -62,21 +56,129 @@ h6 {
 }
 
 p {
+  color: #3b454d;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: 200;
+  font-style: thin;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   letter-spacing: 0.05em;
 }
 
+/* This section contains all styling information for the header. */
+header {
+  align-items: center;
+  color: #024a69;
+  /* border: 1px solid red; */
+  display: flex;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  height: 45px;
+  justify-content: space-between;
+  line-height: 16px;
+  padding: 0px 450px;
+}
+
+body header .dropdown_menu {
+  background: rgba(234, 234, 236, 0.8);
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 47px;
+}
+
+header .dropdown_about p,
+header .dropdown_resources p {
+  color: #3b454d;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+body header .dropdown_about {
+  display: none;
+  height: 40px;
+  padding: 30px 0px;
+  left: 640px;
+  width: 145px;
+}
+
+body header .dropdown_resources {
+  display: none;
+  height: 40px;
+  padding: 30px 0px;
+  right: 620px;
+  width: 145px;
+}
+
+body header .dropdown_services {
+  display: none;
+  height: 206px;
+  justify-content: space-between;
+  left: 640px;
+  padding: 30px 30px;
+  width: 520px;
+}
+
+header .dropdown_services hr {
+  border: 1px solid #e97770;
+  /* transform: rotate(90deg); */
+}
+
+header .dropdown_services .QMS,
+header .dropdown_services .QAS {
+  margin-top: 20px;
+  width: 214px;
+}
+
+header .dropdown_services p {
+  color: #3b454d;
+  margin-bottom: 15px;
+}
+
+header .dropdown_search {
+  display: none;
+  height: 100px;
+  width: 360px;
+  background: rgba(234, 234, 236, 0.8);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  right: 420px;
+}
+
+header .dropdown_search input {
+  background: #eaeaec;
+  border-radius: 13px;
+  height: 25px;
+  margin: 35px 20px;
+  width: 275px;
+}
+
+header .dropdown_search input[type="text"] {
+  background-image: url(../icons/search.svg);
+  background-position: 10px;
+  background-repeat: no-repeat;
+  color: #3b454d;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  outline: none;
+  padding-left: 40px;
+}
+
+/* This section contains all styling information for the footer. */
 footer {
   background: #024a69;
   height: 100%;
 }
 
 footer .footer_body {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   padding: 0px 150px;
@@ -87,7 +189,7 @@ footer .footer_body {
 .footer_contact,
 .footer_services,
 .about_blog {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   margin-top: 75px;
@@ -95,7 +197,7 @@ footer .footer_body {
 }
 
 footer .footer_about img {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   height: 100px;
   margin-bottom: 15px;
   width: 216px;
@@ -110,7 +212,7 @@ footer hr {
 footer p {
   color: #eaeaec;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 24px;
   margin-bottom: 10px;
 }
@@ -121,7 +223,7 @@ footer .pair {
 }
 
 footer .pair img {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   height: 15px;
   margin-right: 10px;
   width: 15px;
@@ -140,7 +242,7 @@ footer .footer_bottom {
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
-  height: 40px;
+  height: 50px;
   justify-content: center;
   margin-top: 75px;
   text-align: center;
