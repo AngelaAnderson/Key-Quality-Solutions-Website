@@ -1,14 +1,14 @@
 section {
   /* border: 1px solid blue; */
   display: flex;
-  height: 570px;
+  height: 770px;
   margin-bottom: 50px;
 }
 
 body .container_one {
   background-color: #024a69;
-  border: 1px solid red;
-  height: 570px;
+  /* border: 1px solid red; */
+  height: 770px;
   width: 57%;
 }
 
@@ -24,8 +24,11 @@ body .container_one img {
 }
 
 .container_one .group_one h1 {
-  margin-bottom: 70px;
-  margin-top: 50px;
+  font-size: 60px;
+  line-height: 136.4%;
+  margin-bottom: 150px;
+  margin-top: 100px;
+  text-transform: capitalize
   width: 450px;
 }
 
@@ -71,7 +74,118 @@ body .container_two {
   background-image: url(../imgs/contact_img.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid green;
-  height: 570px;
+  /* border: 1px solid green; */
   width: 43%;
+}
+
+body .theme7 {
+  background: rgba(234, 234, 236, 0.9) !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 2px !important;
+  height: 650px !important;
+  position: absolute;
+  top: 80px;
+  right: 300px;
+  overflow: hidden;
+  padding: 30px 0px;
+  width: 550px;
+}
+
+body form h1 {
+  color: #024a69;
+}
+
+body form  p{
+  margin-bottom: 20px;
+}
+
+body form .input_group {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  width: 88%;
+}
+
+body form .name_field {
+  width: 250px !important;
+}
+
+body form .extend_field{
+  width: 100%;
+}
+
+body form label{
+  display: flex !important;
+}
+
+.agile-group{
+  margin-bottom: 15px !important;
+}
+
+input, select, textarea{
+  background: #fff !important;
+  border:none !important;
+  border-radius: 2px;
+  border-radius: 2px !important;
+  color: #3B454D;
+  height: 35px;
+  font-family: Roboto;
+  font-style: thin;
+  font-weight: 400;
+  font-size: 14px;
+  text-indent: 10px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  outline: none !important;
+  width: 80%;
+}
+
+textarea{
+  height: 100px;
+}
+
+
+form .agile-hide-formname{
+  display: none;
+}
+
+form .center_form, .input_group{
+ padding-left: 50px;
+  width: 100%;
+}
+
+form .agile-group{
+  margin-bottom: 45px;
+}
+
+form .agile-group label{
+  margin-bottom: 5px;
+}
+
+.agile-group button{
+  background: #E97770;
+  color: #f5f5f5;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 35px;
+  width: 100%;
+}
+
+.button{
+  text-align: right;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 25px;
+}
+
+.button .agile-label{
+  align-items: center;
+  display: none;
+}
+
+form h4{
+  margin-bottom: 20px;
 }
