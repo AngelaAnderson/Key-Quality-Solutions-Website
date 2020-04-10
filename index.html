@@ -16,13 +16,13 @@
     <header>
       <img src="icons/logogmark_light.svg" alt="" />
       <button class="dropbtn">Home</button>
-      <button onclick="dropDownFunction()" class="dropbtn">About</button>
-      <div id="dropdown" class="dropdown_about dropdown_menu">
+      <button class="dropbtn" onmouseover="toggleNav()">About</button>
+      <div id="about" class="dropdown_about dropdown_menu">
         <p>Mission & Values</p>
         <p>KQS Leadership</p>
       </div>
-      <button onclick="dropDownFunction()" class="dropbtn">Services</button>
-      <div class="dropdown_services dropdown_menu">
+      <button class="dropbtn" onmouseover="toggleNav()">Services</button>
+      <div id="services" class="dropdown_services dropdown_menu">
         <div class="QMS">
           <h5>Quality Management Services:</h5>
           <br />
@@ -41,7 +41,7 @@
           <p>Audits / Inspections</p>
         </div>
       </div>
-      <button onclick="dropDownFunction()" class="dropbtn">Resources</button>
+      <button class="dropbtn">Resources</button>
       <div class="dropdown_resources dropdown_menu">
         <p>Industry News</p>
         <p>White Papers</p>
@@ -185,6 +185,16 @@
       <div class="container_four">
         <img src="imgs/homepage_img_two.svg" alt="" />
       </div>
+    </section>
+
+    <section class="section_testimonials">
+      <img src="/icons/quotes.svg" class="adjust_size" alt="" />
+      <h4>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt etiam non. Mi quis hendrerit dolor magna.
+      </h4>
+      <p>-John Doe</p>
+      <img src="/imgs/dots1.svg" alt="" />
     </section>
 
     <section class="blog_posts">

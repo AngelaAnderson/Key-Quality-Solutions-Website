@@ -1,0 +1,75 @@
+body .header {
+  background-image: url(../imgs/header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  padding: 85px 0px;
+  padding-left: 250px;
+}
+
+body .header h3 {
+  margin-bottom: 10px;
+}
+
+body .header h2 {
+  margin-bottom: 25px;
+  width: 443px;
+}
+
+body .header h1 {
+  width: 543px;
+}
+
+body .about {
+  padding-left: 250px;
+  margin-top: 50px;
+  width: 475px;
+}
+
+body .about h2 {
+  color: #024a69;
+  margin-bottom: 25px;
+}
+
+body .about img {
+  height: 408.59px;
+  position: absolute;
+  right: 150px;
+  top: 300px;
+  width: 537px;
+}
+
+body .values {
+  /* border: 1px solid red; */
+  padding-left: 250px;
+  padding-right: 150px;
+  margin-bottom: 150px;
+  margin-top: 100px;
+  text-align: center;
+}
+body .values h2 {
+  color: #024a69;
+  margin-top: 15px;
+  margin-bottom: 75px;
+}
+
+body .values .values_section,
+.values_section_two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.values_section_two {
+  padding: 0px 320px;
+  margin-top: 75px;
+}
+
+.values .values_section .value_group,
+.values .values_section_two .value_group {
+  width: 250px;
+}
+
+.values_section .value_group h2,
+.values_section_two .value_group h2 {
+  margin-bottom: 20px;
+}
