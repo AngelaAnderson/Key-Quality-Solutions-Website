@@ -165,6 +165,7 @@ form .agile-group label{
 
 .agile-group button{
   background: #E97770;
+  border: none;
   color: #f5f5f5;
   font-family: Roboto;
   font-style: normal;
