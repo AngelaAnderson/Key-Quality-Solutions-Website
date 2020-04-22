@@ -2,58 +2,72 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xfe4dst.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Key Quality Solutions | KQS Mission and Values</title>
+    <title>Key Quality Solutions | Meet Your Consultant</title>
   </head>
   <body>
     <header>
-      <img src="icons/logogmark_light.svg" alt="" />
-      <button class="dropbtn">Home</button>
-      <button class="dropbtn" onmouseover="toggleNav()">About</button>
-      <div id="about" class="dropdown_about dropdown_menu">
-        <p>Mission & Values</p>
-        <p>KQS Leadership</p>
+      <div class="mobile_header">
+        <img
+          src="/icons/KQSLogo_Horizontal_Dark.svg"
+          alt="Key Quality Solutions Logo Horizontal png"
+        />
+        <img src="/icons/menu.svg" alt="" />
       </div>
-      <button class="dropbtn" onmouseover="toggleNav()">Services</button>
-      <div id="services" class="dropdown_services dropdown_menu">
-        <div class="QMS">
-          <h5>Quality Management Services:</h5>
-          <br />
-          <p>Regulatory Requirements</p>
-          <p>Quality Management Systems</p>
-          <p>Trainings</p>
+      <div class="regular_header">
+        <img class="header_img" src="/icons/logogmark_light.svg" alt="" />
+        <button href="index.html" class="dropdownbtn_about">home</button>
+        <div class="dropdown">
+          <button class="dropbtn">about</button>
+          <div class="dropdown-content dropdown_about .dropdown_menu">
+            <a href="kqs_about.html">Mission & Values</a>
+            <a href="kqs_leadership">KQS Leadership</a>
+          </div>
         </div>
-        <hr />
-        <div class="QAS">
-          <h5>Quality Assurance Services:</h5>
-          <br />
-          <p>Change Control</p>
-          <p>Supplier Management</p>
-          <p>Risk Management</p>
-          <p>Non-Conformance</p>
-          <p>Audits / Inspections</p>
+        <div class="dropdown">
+          <button class="dropbtn">services</button>
+          <div class="dropdown-content dropdown_services .dropdown_menu">
+            <div class="QMS">
+              <h5>Quality Management:</h5>
+              <br />
+              <a>Regulatory Requirements</a>
+              <a>Quality Management Systems</a>
+              <a>Trainings</a>
+            </div>
+            <hr />
+            <div class="QAS">
+              <h5>Quality Assurance:</h5>
+              <br />
+              <a>Change Control</a>
+              <a>Supplier Management</a>
+              <a>Risk Management</a>
+              <a>Non-Conformance</a>
+              <a>Audits / Inspections</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <button class="dropbtn">Resources</button>
-      <div class="dropdown_resources dropdown_menu">
-        <p>Industry News</p>
-        <p>White Papers</p>
-      </div>
-      <button class="dropbtn">Contact</button>
-      <img src="icons/search.svg" class="resize" alt="" />
-      <div class="dropdown_search dropdown_menu">
-        <input type="text" placeholder="Search" />
+        <div class="dropdown">
+          <button class="dropbtn">resources</button>
+          <div class="dropdown-content dropdown_resources .dropdown_menu">
+            <a href="blog.html">Blog</a>
+          </div>
+        </div>
+        <button>contact</button>
+        <div class="dropdown">
+          <img class="dropbtn" src="/icons/search.svg" alt="" />
+          <div class="dropdown-content dropdown_search .dropdown_menu">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="header">
-      <h3>About Key Quality Solutions</h3>
-      <h1>KQS Mission & Values</h1>
-      <h2>Building Healthier Communities Through Innovative Technology</h2>
+    <section class="header_about">
+      <h3>KQS Mission & Values</h3>
+      <h1>Building Healthier Communities Through Innovative Technology</h1>
     </section>
 
     <section class="about">
@@ -65,22 +79,22 @@
         to meet your needs, accelerate your growth, and equip you with every
         advantage — particularly in the digital sphere. We’ll demonstrate all
         the advancements that maintain compliance and increase performance as
-        you continue to expand.<br />
-        <br />Think about it: your products and services reﬂect the most
-        cutting-edge developments of the 21st century. Let the business itself
-        compliment those innovations with agile operations streamlined for the
-        digital age. For every company within these industries, efﬁciency is
-        everything. We’re here to advise, we’re here to support, we’re here to
-        ensure that you’re never outpaced.
+        you continue to expand. <br />
+        <br />
+        Think about it: your products and services reﬂect the most cutting-edge
+        developments of the 21st century. Let the business itself compliment
+        those innovations with agile operations streamlined for the digital age.
+        For every company within these industries, efﬁciency is everything.
+        We’re here to advise, we’re here to support, we’re here to ensure that
+        you’re never outpaced.
       </p>
-      <img src="/imgs/about_img.svg" alt="" />
+      <img class="ms_img" src="/imgs/mv_img.svg" alt="" />
+      <button class="red_button">KQS Consultants</button>
     </section>
-
-    <section class="values">
+    <section class="values_section">
       <h3>Our Values</h3>
-      <h2>One catchy sentence about our values.</h2>
-      <div class="values_section">
-        <div class="value_group">
+      <div class="values">
+        <div class="value_pair">
           <h2>Trust</h2>
           <p>
             At KQS, we value our clients’ trust above all as it’s important to
@@ -88,15 +102,14 @@
           </p>
         </div>
 
-        <div class="value_group">
+        <div class="value_pair">
           <h2>Integrity</h2>
           <p>
             At KQS we are honest, transparent and committed to doing what’s best
             for our customers.
           </p>
         </div>
-
-        <div class="value_group">
+        <div class="value_pair">
           <h2>Awareness</h2>
           <p>
             Our consultants constantly improve themselves every single day to
@@ -104,25 +117,21 @@
           </p>
         </div>
 
-        <div class="value_group">
+        <div class="value_pair">
           <h2>Quality</h2>
           <p>
             To maintain maximum customer satisfaction, we realize the quality of
             service is of utmost priority.
           </p>
         </div>
-      </div>
-      <div class="values_section_two">
-        <div class="value_group">
+        <div class="value_pair">
           <h2>User Experience</h2>
           <p>
-            We make things simple again. We want to offer practical,
-            experiential, affective and meaningful services to make running your
-            business easier!
+            We want to offer practical, experiential, affective and meaningful
+            services to make running your business easier!
           </p>
         </div>
-
-        <div class="value_group">
+        <div class="value_pair">
           <h2>Motivation</h2>
           <p>
             Our team of professionals is available to put their all into each
@@ -136,7 +145,7 @@
   <footer>
     <div class="footer_body">
       <div class="footer_about">
-        <img src="icons/HL_KQS_Logo.svg" alt="" />
+        <img class="footer_logo" src="/icons/HL_KQS_Logo.svg" alt="" />
         <p>
           Helping healthcare companies build an optimized business through
           interoperable digital systems that achieve heightened quality on a
@@ -144,71 +153,66 @@
         </p>
         <hr />
         <div class="pair">
-          <img src="icons/copyright.svg" />
-          <p>Key Quality Solutions</p>
+          <img src="/icons/copyright.svg" alt="" />
+          <a href="">2020 Key Quality Solutions LLC</a>
         </div>
       </div>
-
       <div class="footer_contact">
-        <h6>Contact</h6>
+        <h5>contact</h5>
         <div class="pair">
-          <img src="icons/location.svg" alt="" />
+          <img src="/icons/location.svg" alt="" />
           <p>Key Quality Solutions LLC</p>
         </div>
-        <p>
-          2 Wisconsin Circle <br />
-          Suite 700 <br />
-          Chevy Chase, MD 20815
-        </p>
+        <a href=""
+          >2 Wisconsin Circle, Suite 700 <br />
+          Chevy Chase, MD 20815</a
+        >
         <hr />
         <div class="pair">
-          <img src="icons/mail.svg" alt="" />
-          <p>contactus@keyqualitysolutions.com</p>
+          <img src="/icons/mail.svg" alt="" />
+          <a
+            href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
+            >contactus@keyqualitysolutions.com</a
+          >
         </div>
-
         <div class="pair">
-          <img src="icons/linkedin.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/linkedin.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
-
         <div class="pair">
-          <img src="icons/facebook.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/facebook.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
-
         <div class="pair">
-          <img src="icons/twitter.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/twitter.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
       </div>
-
       <div class="footer_services">
-        <h6>Services</h6>
-        <p>Supplier Management</p>
-        <p>Risk Management</p>
-        <p>Non-Conformance</p>
-        <p>Change Control</p>
-        <p>Audits / Inspections</p>
-        <p>Regulatory Requirements</p>
-        <p>Quality Management Systems</p>
-        <p>Trainings</p>
+        <h5>services</h5>
+        <a href="">Supplier Management</a>
+        <a href="">Risk Management</a>
+        <a href="">Non-Conformance</a>
+        <a href="">Change Control</a>
+        <a href="">Audits / Inspections</a>
+        <a href="">Quality Management Systems</a>
+        <a href="">Trainings</a>
+        <a href="">Operation Site</a>
+        <a href="">Document Management</a>
+        <a href="">Product Complaints</a>
+        <a href="">CAPA Management</a>
       </div>
-
       <div class="about_blog">
-        <h6>About</h6>
-        <p>Mission & Values</p>
-        <p>KQS Leadership</p>
+        <h5>about</h5>
+        <a href="">Mission & Values</a>
+        <a href="">KQS Leadership</a>
         <hr />
-        <h6>Blog</h6>
-        <p>Industry News</p>
-        <p>Regulatory News</p>
-        <p>White Papers</p>
+        <h5>resources</h5>
+        <a href="">Blog</a>
       </div>
     </div>
-
-    <div class="footer_bottom pair">
-      <img class="footer_img" src="icons/ao_logo.svg" alt="" />
-      <p>Web Design by Angel Oleathia</p>
+    <div class="footer_bottom">
+      <a href="https://angeloleathia.com">Web Design by Angel Oleathia</a>
     </div>
   </footer>
 </html>

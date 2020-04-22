@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xfe4dst.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,357 +12,339 @@
   </head>
   <body>
     <header>
-      <img src="icons/logogmark_light.svg" alt="" />
-      <button class="dropbtn">Home</button>
-      <button class="dropbtn" onmouseover="toggleNav()">About</button>
-      <div id="about" class="dropdown_about dropdown_menu">
-        <p>Mission & Values</p>
-        <p>KQS Leadership</p>
+      <div class="mobile_header">
+        <img
+          src="/icons/KQSLogo_Horizontal_Dark.svg"
+          alt="Key Quality Solutions Logo Horizontal png"
+        />
+        <img src="/icons/menu.svg" alt="" />
       </div>
-      <button class="dropbtn" onmouseover="toggleNav()">Services</button>
-      <div id="services" class="dropdown_services dropdown_menu">
-        <div class="QMS">
-          <h5>Quality Management Services:</h5>
-          <br />
-          <p>Regulatory Requirements</p>
-          <p>Quality Management Systems</p>
-          <p>Trainings</p>
+      <div class="regular_header">
+        <img class="header_img" src="/icons/logogmark_light.svg" alt="" />
+        <button href="index.html" class="dropdownbtn_about">home</button>
+        <div class="dropdown">
+          <button class="dropbtn">about</button>
+          <div class="dropdown-content dropdown_about .dropdown_menu">
+            <a href="kqs_about.html">Mission & Values</a>
+            <a href="kqs_leadership">KQS Leadership</a>
+          </div>
         </div>
-        <hr />
-        <div class="QAS">
-          <h5>Quality Assurance Services:</h5>
-          <br />
-          <p>Change Control</p>
-          <p>Supplier Management</p>
-          <p>Risk Management</p>
-          <p>Non-Conformance</p>
-          <p>Audits / Inspections</p>
+        <div class="dropdown">
+          <button class="dropbtn">services</button>
+          <div class="dropdown-content dropdown_services .dropdown_menu">
+            <div class="QMS">
+              <h5>Quality Management:</h5>
+              <br />
+              <a>Regulatory Requirements</a>
+              <a>Quality Management Systems</a>
+              <a>Trainings</a>
+            </div>
+            <hr />
+            <div class="QAS">
+              <h5>Quality Assurance:</h5>
+              <br />
+              <a>Change Control</a>
+              <a>Supplier Management</a>
+              <a>Risk Management</a>
+              <a>Non-Conformance</a>
+              <a>Audits / Inspections</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <button class="dropbtn">Resources</button>
-      <div class="dropdown_resources dropdown_menu">
-        <p>Industry News</p>
-        <p>White Papers</p>
-      </div>
-      <button class="dropbtn">Contact</button>
-      <img src="icons/search.svg" class="resize" alt="" />
-      <div class="dropdown_search dropdown_menu">
-        <input type="text" placeholder="Search" />
+        <div class="dropdown">
+          <button class="dropbtn">resources</button>
+          <div class="dropdown-content dropdown_resources .dropdown_menu">
+            <a href="blog.html">Blog</a>
+          </div>
+        </div>
+        <button>contact</button>
+        <div class="dropdown">
+          <img class="dropbtn" src="/icons/search.svg" alt="" />
+          <div class="dropdown-content dropdown_search .dropdown_menu">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
       </div>
     </header>
 
-    <section>
-      <div class="container_one">
-        <div class="group_one">
+    <section class="contact_body">
+      <div class="container_one_contact">
+        <div class="group_one_contact">
           <h1>We Want To Hear From You.</h1>
           <p>
             Through supporting organizations to become efficient in the digital
             transformation, we can help Biopharma companies stay in regulation.
             Want to find out how KQS can help? Let's talk.
           </p>
-          <div class="social_icons">
-            <img src="icons/linkedin.svg" alt="" />
-            <img src="icons/facebook.svg" alt="" />
-            <img src="icons/twitter.svg" alt="" />
-          </div>
-          <hr />
-        </div>
-        <div class="group_two">
-          <div class="address">
-            <div class="pair">
-              <img src="icons/location.svg" alt="" />
-              <p>Key Quality Solutions LLC</p>
-            </div>
-            <p>
-              2 Wisconsin Circle <br />
-              Suite 700 <br />
-              Chevy Chase, MD 20815
-            </p>
-          </div>
-          <div class="social_contact">
-            <div class="pair">
-              <img src="icons/mail.svg" alt="" />
-              <p>contactus@keyqualitysolutions.com</p>
-            </div>
-
-            <div class="pair">
-              <img src="icons/linkedin.svg" alt="" />
-              <p>@keyqualitysolutions</p>
-            </div>
-
-            <div class="pair">
-              <img src="icons/facebook.svg" alt="" />
-              <p>@keyqualitysolutions</p>
-            </div>
-
-            <div class="pair">
-              <img src="icons/twitter.svg" alt="" />
-              <p>@keyqualitysolutions</p>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="container_two"></div>
-    </section>
+      <div class="container_two_contact">
+        <div class="contact_form">
+          <!-- <link href="https://d1gwclp1pmzk26.cloudfront.net/agile/forms/v1/agile-form.min.css" rel="stylesheet"> -->
 
-    <div class="contact_form">
-      <!-- <link href="https://d1gwclp1pmzk26.cloudfront.net/agile/forms/v1/agile-form.min.css" rel="stylesheet"> -->
-
-      <form
-        class="form-view theme7"
-        id="agile-form"
-        action="https://keyqualitysolutions.agilecrm.com/formsubmit"
-        style="max-width: 750px;"
-        method="GET"
-      >
-        <fieldset>
-          <!-- Form Name -->
-          <legend class="agile-hide-formname">Website Intake Form</legend>
-          <p class="agile-form-description"></p>
-          <div style="display: none; height: 0px; width: 0px;">
-            <input
-              type="hidden"
-              id="_agile_form_name"
-              name="_agile_form_name"
-              value="Website Intake Form"
-            />
-            <input
-              type="hidden"
-              id="_agile_domain"
-              name="_agile_domain"
-              value="keyqualitysolutions"
-            />
-            <input
-              type="hidden"
-              id="_agile_api"
-              name="_agile_api"
-              value="e9qferqh9e48b23popq4aq2fm2"
-            />
-            <input
-              type="hidden"
-              id="_agile_redirect_url"
-              name="_agile_redirect_url"
-              value="#"
-            />
-            <input
-              type="hidden"
-              id="_agile_document_url"
-              name="_agile_document_url"
-              value=""
-            />
-            <input
-              type="hidden"
-              id="_agile_confirmation_msg"
-              name="_agile_confirmation_msg"
-              value="Success! Thank you for contacting Key Quality Solutions! We’ve received your message and will be in touch shortly."
-            />
-            <input
-              type="hidden"
-              id="_agile_form_id_tags"
-              name="tags"
-              value=""
-            />
-
-            <input
-              type="hidden"
-              id="_agile_form_id"
-              name="_agile_form_id"
-              value="5253613226098688"
-            />
-          </div>
-          <div class="agile-group">
-            <h1 style="text-align: center;" class="agile-header-element">
-              Contact Us.
-            </h1>
-          </div>
-          <div class="agile-group">
-            <h4 style="text-align: center;" class="agile-header-element">
-              Please fill our form and see what we can offer!
-            </h4>
-          </div>
-          <!-- Text input-->
-          <div class="input_group">
-            <div class="agile-group required-control name_field">
-              <label class="agile-label" for="agilefield-10"
-                >First Name<span class="agile-span-asterisk"> *</span></label
-              >
-              <div class="agile-field-xlarge agile-field">
+          <form
+            class="form-view theme7"
+            id="agile-form"
+            action="https://keyqualitysolutions.agilecrm.com/formsubmit"
+            style="max-width: 750px;"
+            method="GET"
+          >
+            <fieldset>
+              <!-- Form Name -->
+              <legend class="agile-hide-formname">Website Intake Form</legend>
+              <p class="agile-form-description"></p>
+              <div style="display: none; height: 0px; width: 0px;">
                 <input
-                  maxlength="250"
-                  id="agilefield-10"
-                  name="first_name"
-                  type="text"
-                  placeholder="John"
-                  class="agile-height-default"
-                  required=""
+                  type="hidden"
+                  id="_agile_form_name"
+                  name="_agile_form_name"
+                  value="Website Intake Form"
+                />
+                <input
+                  type="hidden"
+                  id="_agile_domain"
+                  name="_agile_domain"
+                  value="keyqualitysolutions"
+                />
+                <input
+                  type="hidden"
+                  id="_agile_api"
+                  name="_agile_api"
+                  value="e9qferqh9e48b23popq4aq2fm2"
+                />
+                <input
+                  type="hidden"
+                  id="_agile_redirect_url"
+                  name="_agile_redirect_url"
+                  value="#"
+                />
+                <input
+                  type="hidden"
+                  id="_agile_document_url"
+                  name="_agile_document_url"
+                  value=""
+                />
+                <input
+                  type="hidden"
+                  id="_agile_confirmation_msg"
+                  name="_agile_confirmation_msg"
+                  value="Success! Thank you for contacting Key Quality Solutions! We’ve received your message and will be in touch shortly."
+                />
+                <input
+                  type="hidden"
+                  id="_agile_form_id_tags"
+                  name="tags"
+                  value=""
+                />
+
+                <input
+                  type="hidden"
+                  id="_agile_form_id"
+                  name="_agile_form_id"
+                  value="5253613226098688"
                 />
               </div>
-              <div class="agile-custom-clear"></div>
-            </div>
-            <!-- Text input-->
-            <div class="agile-group required-control name_field">
-              <label class="agile-label" for="agilefield-5"
-                >Last Name<span class="agile-span-asterisk"> *</span></label
-              >
-              <div class="agile-field-xlarge agile-field">
-                <input
-                  maxlength="250"
-                  id="agilefield-5"
-                  name="last_name"
-                  type="text"
-                  placeholder="Doe"
-                  class="agile-height-default"
-                  required=""
-                />
+              <div class="agile-group">
+                <h1 style="text-align: center;" class="agile-header-element">
+                  Contact Us!
+                </h1>
               </div>
-              <div class="agile-custom-clear"></div>
-            </div>
-          </div>
-          <!-- Text input-->
-          <div class="agile-group required-control center_form">
-            <label class="agile-label" for="agilefield-6"
-              >Email<span class="agile-span-asterisk"> *</span></label
-            >
-            <div class="agile-field-xlarge agile-field">
-              <input
-                maxlength="250"
-                id="agilefield-6"
-                name="email"
-                type="email"
-                placeholder="youremail@domain.com"
-                class="agile-height-default"
-                required=""
-              />
-            </div>
-            <div class="agile-custom-clear"></div>
-          </div>
-          <!-- Text input-->
-          <div class="agile-group required-control center_form">
-            <label class="agile-label" for="agilefield-7"
-              >Company Name<span class="agile-span-asterisk"> *</span></label
-            >
-            <div class="agile-field-xlarge agile-field">
-              <input
-                maxlength="250"
-                id="agilefield-7"
-                name="company"
-                type="text"
-                placeholder="Your Business Name"
-                class="agile-height-default"
-                required=""
-              />
-            </div>
-            <div class="agile-custom-clear"></div>
-          </div>
-          <!-- Select Basic -->
-          <div class="agile-group center_form">
-            <label class="agile-label" for="agilefield-9"
-              >Focus Industry<span class="agile-span-asterisk"> *</span></label
-            >
-            <div class="agile-field-xlarge agile-field">
-              <select
-                id="agilefield-9"
-                name="agilefield-9"
-                class="agile-height-default"
-                required=""
-              >
-                <option value="">Select</option>
-                <option value="Biotechnology">Biotechnology</option>
-                <option value="Cosmetics">Cosmetics</option>
-                <option value="Medical Devices">Medical Devices</option>
-                <option value="Pharmaceuticals">Pharmaceuticals</option>
-              </select>
-            </div>
-          </div>
+              <div class="agile-group">
+                <h4 style="text-align: center;" class="agile-header-element">
+                  Please fill our form and see what we can offer!
+                </h4>
+              </div>
+              <!-- Text input-->
+              <div class="input_group">
+                <div class="agile-group required-control name_field">
+                  <label class="agile-label" for="agilefield-10"
+                    >First Name<span class="agile-span-asterisk">
+                      *</span
+                    ></label
+                  >
+                  <div class="agile-field-xlarge agile-field">
+                    <input
+                      maxlength="250"
+                      id="agilefield-10"
+                      name="first_name"
+                      type="text"
+                      placeholder="John"
+                      class="agile-height-default"
+                      required=""
+                    />
+                  </div>
+                  <div class="agile-custom-clear"></div>
+                </div>
+                <!-- Text input-->
+                <div class="agile-group required-control name_field">
+                  <label class="agile-label" for="agilefield-5"
+                    >Last Name<span class="agile-span-asterisk"> *</span></label
+                  >
+                  <div class="agile-field-xlarge agile-field">
+                    <input
+                      maxlength="250"
+                      id="agilefield-5"
+                      name="last_name"
+                      type="text"
+                      placeholder="Doe"
+                      class="agile-height-default"
+                      required=""
+                    />
+                  </div>
+                  <div class="agile-custom-clear"></div>
+                </div>
+              </div>
+              <!-- Text input-->
+              <div class="agile-group required-control center_form">
+                <label class="agile-label" for="agilefield-6"
+                  >Email<span class="agile-span-asterisk"> *</span></label
+                >
+                <div class="agile-field-xlarge agile-field">
+                  <input
+                    maxlength="250"
+                    id="agilefield-6"
+                    name="email"
+                    type="email"
+                    placeholder="youremail@domain.com"
+                    class="agile-height-default"
+                    required=""
+                  />
+                </div>
+                <div class="agile-custom-clear"></div>
+              </div>
+              <!-- Text input-->
+              <div class="agile-group required-control center_form">
+                <label class="agile-label" for="agilefield-7"
+                  >Company Name<span class="agile-span-asterisk">
+                    *</span
+                  ></label
+                >
+                <div class="agile-field-xlarge agile-field">
+                  <input
+                    maxlength="250"
+                    id="agilefield-7"
+                    name="company"
+                    type="text"
+                    placeholder="Your Business Name"
+                    class="agile-height-default"
+                    required=""
+                  />
+                </div>
+                <div class="agile-custom-clear"></div>
+              </div>
+              <!-- Select Basic -->
+              <div class="agile-group center_form">
+                <label class="agile-label" for="agilefield-9"
+                  >Focus Industry<span class="agile-span-asterisk">
+                    *</span
+                  ></label
+                >
+                <div class="agile-field-xlarge agile-field">
+                  <select
+                    id="agilefield-9"
+                    name="agilefield-9"
+                    class="agile-height-default"
+                    required=""
+                  >
+                    <option value="">Select</option>
+                    <option value="Biotechnology">Biotechnology</option>
+                    <option value="Cosmetics">Cosmetics</option>
+                    <option value="Medical Devices">Medical Devices</option>
+                    <option value="Pharmaceuticals">Pharmaceuticals</option>
+                  </select>
+                </div>
+              </div>
 
-          <!-- Textarea -->
-          <div class="agile-group required-control center_form">
-            <label class="agile-label" for="agilefield-8"
-              >Message<span class="agile-span-asterisk"> *</span></label
-            >
-            <div class="agile-field-xlarge agile-field">
-              <textarea
-                maxlength="250"
-                id="agilefield-8"
-                name="agilefield-8"
-                placeholder="Start typing your message here..."
-                required=""
-                class="agile-height-default"
-              ></textarea>
-            </div>
-            <div class="agile-custom-clear"></div>
-          </div>
+              <!-- Textarea -->
+              <div class="agile-group required-control center_form">
+                <label class="agile-label" for="agilefield-8"
+                  >Message<span class="agile-span-asterisk"> *</span></label
+                >
+                <div class="agile-field-xlarge agile-field">
+                  <textarea
+                    maxlength="250"
+                    id="agilefield-8"
+                    name="agilefield-8"
+                    placeholder="Start typing your message here..."
+                    required=""
+                    class="agile-height-default"
+                  ></textarea>
+                </div>
+                <div class="agile-custom-clear"></div>
+              </div>
 
-          <!--recaptcha aglignment-->
-          <!-- Button -->
-          <div class="agile-group button">
-            <div class="agile-field agile-button-field">
-              <button type="submit" class="agile-button">Submit</button>
-              <br /><span id="agile-error-msg"></span>
-            </div>
-            <label class="agile-label">&nbsp;</label>
-          </div>
-        </fieldset>
-      </form>
-      <script type="text/javascript">
-        (function (a) {
-          var b = a.onload,
-            p = true;
-          isCaptcha = true;
-          if (p) {
-            a.onload =
-              "function" != typeof b
-                ? function () {
+              <!--recaptcha aglignment-->
+              <!-- Button -->
+              <div class="agile-group button">
+                <div class="agile-field agile-button-field">
+                  <button type="submit" class="agile-button">Submit</button>
+                  <br /><span id="agile-error-msg"></span>
+                </div>
+                <label class="agile-label">&nbsp;</label>
+              </div>
+            </fieldset>
+          </form>
+          <script type="text/javascript">
+            (function (a) {
+              var b = a.onload,
+                p = true;
+              isCaptcha = true;
+              if (p) {
+                a.onload =
+                  "function" != typeof b
+                    ? function () {
+                        try {
+                          _agile_load_form_fields();
+                        } catch (a) {}
+                      }
+                    : function () {
+                        b();
+                        try {
+                          _agile_load_form_fields();
+                        } catch (a) {}
+                      };
+              }
+              var formLen = document.forms.length;
+              for (i = 0; i < formLen; i++) {
+                if (document.forms.item(i).getAttribute("id") == "agile-form") {
+                  a.document.forms.item(i).onsubmit = function (a) {
+                    a.preventDefault();
                     try {
-                      _agile_load_form_fields();
-                    } catch (a) {}
-                  }
-                : function () {
-                    b();
-                    try {
-                      _agile_load_form_fields();
-                    } catch (a) {}
+                      _agile_synch_form_v5(this);
+                    } catch (b) {
+                      this.submit();
+                    }
                   };
-          }
-          var formLen = document.forms.length;
-          for (i = 0; i < formLen; i++) {
-            if (document.forms.item(i).getAttribute("id") == "agile-form") {
-              a.document.forms.item(i).onsubmit = function (a) {
-                a.preventDefault();
-                try {
-                  _agile_synch_form_v5(this);
-                } catch (b) {
-                  this.submit();
                 }
-              };
-            }
-          }
-        })(window);
-      </script>
-    </div>
-    <script
-      id="_agile_min_js"
-      async
-      type="text/javascript"
-      src="https://keyqualitysolutions.agilecrm.com/stats/min/agile-min.js"
-    ></script>
-    <script type="text/javascript">
-      var Agile_API = Agile_API || {};
-      Agile_API.on_after_load = function () {
-        _agile.set_account(
-          "e9qferqh9e48b23popq4aq2fm2",
-          "keyqualitysolutions",
-          false
-        );
-        _agile.track_page_view();
-        _agile_execute_web_rules();
-      };
-    </script>
+              }
+            })(window);
+          </script>
+        </div>
+        <script
+          id="_agile_min_js"
+          async
+          type="text/javascript"
+          src="https://keyqualitysolutions.agilecrm.com/stats/min/agile-min.js"
+        ></script>
+        <script type="text/javascript">
+          var Agile_API = Agile_API || {};
+          Agile_API.on_after_load = function () {
+            _agile.set_account(
+              "e9qferqh9e48b23popq4aq2fm2",
+              "keyqualitysolutions",
+              false
+            );
+            _agile.track_page_view();
+            _agile_execute_web_rules();
+          };
+        </script>
+      </div>
+    </section>
   </body>
   <footer>
     <div class="footer_body">
       <div class="footer_about">
-        <img src="icons/HL_KQS_Logo.svg" alt="" />
+        <img class="footer_logo" src="/icons/HL_KQS_Logo.svg" alt="" />
         <p>
           Helping healthcare companies build an optimized business through
           interoperable digital systems that achieve heightened quality on a
@@ -371,71 +352,66 @@
         </p>
         <hr />
         <div class="pair">
-          <img src="icons/copyright.svg" />
-          <p>Key Quality Solutions</p>
+          <img src="/icons/copyright.svg" alt="" />
+          <a href="">2020 Key Quality Solutions LLC</a>
         </div>
       </div>
-
       <div class="footer_contact">
-        <h6>Contact</h6>
+        <h5>contact</h5>
         <div class="pair">
-          <img src="icons/location.svg" alt="" />
+          <img src="/icons/location.svg" alt="" />
           <p>Key Quality Solutions LLC</p>
         </div>
-        <p>
-          2 Wisconsin Circle <br />
-          Suite 700 <br />
-          Chevy Chase, MD 20815
-        </p>
+        <a href=""
+          >2 Wisconsin Circle, Suite 700 <br />
+          Chevy Chase, MD 20815</a
+        >
         <hr />
         <div class="pair">
-          <img src="icons/mail.svg" alt="" />
-          <p>contactus@keyqualitysolutions.com</p>
+          <img src="/icons/mail.svg" alt="" />
+          <a
+            href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
+            >contactus@keyqualitysolutions.com</a
+          >
         </div>
-
         <div class="pair">
-          <img src="icons/linkedin.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/linkedin.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
-
         <div class="pair">
-          <img src="icons/facebook.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/facebook.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
-
         <div class="pair">
-          <img src="icons/twitter.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/twitter.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
       </div>
-
       <div class="footer_services">
-        <h6>Services</h6>
-        <p>Supplier Management</p>
-        <p>Risk Management</p>
-        <p>Non-Conformance</p>
-        <p>Change Control</p>
-        <p>Audits / Inspections</p>
-        <p>Regulatory Requirements</p>
-        <p>Quality Management Systems</p>
-        <p>Trainings</p>
+        <h5>services</h5>
+        <a href="">Supplier Management</a>
+        <a href="">Risk Management</a>
+        <a href="">Non-Conformance</a>
+        <a href="">Change Control</a>
+        <a href="">Audits / Inspections</a>
+        <a href="">Quality Management Systems</a>
+        <a href="">Trainings</a>
+        <a href="">Operation Site</a>
+        <a href="">Document Management</a>
+        <a href="">Product Complaints</a>
+        <a href="">CAPA Management</a>
       </div>
-
       <div class="about_blog">
-        <h6>About</h6>
-        <p>Mission & Values</p>
-        <p>KQS Leadership</p>
+        <h5>about</h5>
+        <a href="">Mission & Values</a>
+        <a href="">KQS Leadership</a>
         <hr />
-        <h6>Blog</h6>
-        <p>Industry News</p>
-        <p>Regulatory News</p>
-        <p>White Papers</p>
+        <h5>resources</h5>
+        <a href="">Blog</a>
       </div>
     </div>
-
     <div class="footer_bottom">
-      <p>Web Design by Angel Oleathia</p>
-      <!-- <img class="footer_img" src="icons/ao_logo.svg" alt="" /> -->
+      <a href="https://angeloleathia.com">Web Design by Angel Oleathia</a>
     </div>
   </footer>
 </html>

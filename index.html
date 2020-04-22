@@ -2,59 +2,71 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/xfe4dst.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Key Quality Solutions | Helping Big Pharma Make the "Digital Transition"
+      Key Quality Solutions | Helping Big Pharma Make the Digital Transition
     </title>
   </head>
   <body>
-    <button class="CTA">Contact For A Quote!</button>
     <header>
-      <img src="icons/logogmark_light.svg" alt="" />
-      <button class="dropbtn">Home</button>
-      <button class="dropbtn" onmouseover="toggleNav()">About</button>
-      <div id="about" class="dropdown_about dropdown_menu">
-        <p>Mission & Values</p>
-        <p>KQS Leadership</p>
+      <div class="mobile_header">
+        <img
+          src="/icons/KQSLogo_Horizontal_Dark.svg"
+          alt="Key Quality Solutions Logo Horizontal png"
+        />
+        <img src="/icons/menu.svg" alt="" />
       </div>
-      <button class="dropbtn" onmouseover="toggleNav()">Services</button>
-      <div id="services" class="dropdown_services dropdown_menu">
-        <div class="QMS">
-          <h5>Quality Management Services:</h5>
-          <br />
-          <p>Regulatory Requirements</p>
-          <p>Quality Management Systems</p>
-          <p>Trainings</p>
+      <div class="regular_header">
+        <img class="header_img" src="/icons/logogmark_light.svg" alt="" />
+        <button href="index.html" class="dropdownbtn_about">home</button>
+        <div class="dropdown">
+          <button class="dropbtn">about</button>
+          <div class="dropdown-content dropdown_about .dropdown_menu">
+            <a href="kqs_about.html">Mission & Values</a>
+            <a href="kqs_leadership">KQS Leadership</a>
+          </div>
         </div>
-        <hr />
-        <div class="QAS">
-          <h5>Quality Assurance Services:</h5>
-          <br />
-          <p>Change Control</p>
-          <p>Supplier Management</p>
-          <p>Risk Management</p>
-          <p>Non-Conformance</p>
-          <p>Audits / Inspections</p>
+        <div class="dropdown">
+          <button class="dropbtn">services</button>
+          <div class="dropdown-content dropdown_services .dropdown_menu">
+            <div class="QMS">
+              <h5>Quality Management:</h5>
+              <br />
+              <a>Regulatory Requirements</a>
+              <a>Quality Management Systems</a>
+              <a>Trainings</a>
+            </div>
+            <hr />
+            <div class="QAS">
+              <h5>Quality Assurance:</h5>
+              <br />
+              <a>Change Control</a>
+              <a>Supplier Management</a>
+              <a>Risk Management</a>
+              <a>Non-Conformance</a>
+              <a>Audits / Inspections</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <button class="dropbtn">Resources</button>
-      <div class="dropdown_resources dropdown_menu">
-        <p>Industry News</p>
-        <p>White Papers</p>
-      </div>
-      <button class="dropbtn">Contact</button>
-      <img src="icons/search.svg" class="resize" alt="" />
-      <div class="dropdown_search dropdown_menu">
-        <input type="text" placeholder="Search" />
+        <div class="dropdown">
+          <button class="dropbtn">resources</button>
+          <div class="dropdown-content dropdown_resources .dropdown_menu">
+            <a href="blog.html">Blog</a>
+          </div>
+        </div>
+        <button>contact</button>
+        <div class="dropdown">
+          <img class="dropbtn" src="/icons/search.svg" alt="" />
+          <div class="dropdown-content dropdown_search .dropdown_menu">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="section_about">
-      <button>About KQS</button>
+    <section class="section_about row_column">
       <div class="container_one">
         <div class="container_group_one">
           <h1>Helping Big Pharma Make The Digital Leap</h1>
@@ -74,10 +86,11 @@
         </div>
       </div>
       <div class="container_two">
-        <img src="imgs/homepage_img_one.svg" alt="" />
+        <img src="/imgs/homepage_img_one.svg" alt="" />
       </div>
+      <button class="floatingAboutButton">About KQS</button>
     </section>
-
+    <button class="floatingButton">Get a Quote!</button>
     <section class="focus_areas">
       <h3>Industries</h3>
       <h2>
@@ -126,13 +139,12 @@
         </div>
       </div>
     </section>
-
-    <section class="section_services">
+    <section class="section_services row_column">
       <div class="container_three">
         <div class="container_group_three">
           <h1>Stay compliant, up your output, innovate for the future!</h1>
           <p>
-            Digital know-how can speed up and simplify all parts of your <br />
+            Digital know-how can speed up and simplify all parts of your
             operation. We’ll optimize every facet of your business.
           </p>
           <div class="service_offerings">
@@ -156,6 +168,16 @@
                 <img src="icons/check.svg" alt="" />
                 <h4>Change Control</h4>
               </div>
+
+              <div class="service">
+                <img src="icons/check.svg" alt="" />
+                <h4>Document Management</h4>
+              </div>
+
+              <div class="service">
+                <img src="icons/check.svg" alt="" />
+                <h4>Product Complaints</h4>
+              </div>
             </div>
 
             <div class="column">
@@ -166,7 +188,7 @@
 
               <div class="service">
                 <img src="icons/check.svg" alt="" />
-                <h4>Quality Management Systems</h4>
+                <h4>Quality Systems</h4>
               </div>
 
               <div class="service">
@@ -178,6 +200,10 @@
                 <img src="icons/check.svg" alt="" />
                 <h4>Audits / Inspections</h4>
               </div>
+              <div class="service">
+                <img src="icons/check.svg" alt="" />
+                <h4>CAPA Management</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -186,7 +212,6 @@
         <img src="imgs/homepage_img_two.svg" alt="" />
       </div>
     </section>
-
     <section class="section_testimonials">
       <img src="/icons/quotes.svg" class="adjust_size" alt="" />
       <h4>
@@ -200,30 +225,29 @@
     <section class="blog_posts">
       <h3>Industry News</h3>
       <h2>Read up on industry news and developments.</h2>
-      <div class="group_three">
+      <div class="group_three row_column">
         <div class="box">
           <img src="" alt="" />
-          <h5>Biotechnology</h5>
+          <h5>Digital Innovations for Pharmaceutical Companies</h5>
         </div>
 
         <div class="box">
           <img src="" alt="" />
-          <h5>Pharmaceuticals</h5>
+          <h5>Creating a Digital Factory</h5>
         </div>
 
         <div class="box">
           <img src="" alt="" />
-          <h5>Medical Devices</h5>
+          <h5>Augmented Reality and the Pharma Industry</h5>
         </div>
       </div>
     </section>
     <script src="/javascript/main.js"></script>
   </body>
-
   <footer>
     <div class="footer_body">
       <div class="footer_about">
-        <img src="icons/HL_KQS_Logo.svg" alt="" />
+        <img class="footer_logo" src="/icons/HL_KQS_Logo.svg" alt="" />
         <p>
           Helping healthcare companies build an optimized business through
           interoperable digital systems that achieve heightened quality on a
@@ -231,71 +255,66 @@
         </p>
         <hr />
         <div class="pair">
-          <img src="icons/copyright.svg" />
-          <p>Key Quality Solutions</p>
+          <img src="/icons/copyright.svg" alt="" />
+          <a href="">2020 Key Quality Solutions LLC</a>
         </div>
       </div>
-
       <div class="footer_contact">
-        <h6>Contact</h6>
+        <h5>contact</h5>
         <div class="pair">
-          <img src="icons/location.svg" alt="" />
+          <img src="/icons/location.svg" alt="" />
           <p>Key Quality Solutions LLC</p>
         </div>
-        <p>
-          2 Wisconsin Circle <br />
-          Suite 700 <br />
-          Chevy Chase, MD 20815
-        </p>
+        <a href=""
+          >2 Wisconsin Circle, Suite 700 <br />
+          Chevy Chase, MD 20815</a
+        >
         <hr />
         <div class="pair">
-          <img src="icons/mail.svg" alt="" />
-          <p>contactus@keyqualitysolutions.com</p>
+          <img src="/icons/mail.svg" alt="" />
+          <a
+            href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
+            >contactus@keyqualitysolutions.com</a
+          >
         </div>
-
         <div class="pair">
-          <img src="icons/linkedin.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/linkedin.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
-
         <div class="pair">
-          <img src="icons/facebook.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/facebook.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
-
         <div class="pair">
-          <img src="icons/twitter.svg" alt="" />
-          <p>@keyqualitysolutions</p>
+          <img src="/icons/twitter.svg" alt="" />
+          <a href="">@keyqualitysolutions</a>
         </div>
       </div>
-
       <div class="footer_services">
-        <h6>Services</h6>
-        <p>Supplier Management</p>
-        <p>Risk Management</p>
-        <p>Non-Conformance</p>
-        <p>Change Control</p>
-        <p>Audits / Inspections</p>
-        <p>Regulatory Requirements</p>
-        <p>Quality Management Systems</p>
-        <p>Trainings</p>
+        <h5>services</h5>
+        <a href="">Supplier Management</a>
+        <a href="">Risk Management</a>
+        <a href="">Non-Conformance</a>
+        <a href="">Change Control</a>
+        <a href="">Audits / Inspections</a>
+        <a href="">Quality Management Systems</a>
+        <a href="">Trainings</a>
+        <a href="">Operation Site</a>
+        <a href="">Document Management</a>
+        <a href="">Product Complaints</a>
+        <a href="">CAPA Management</a>
       </div>
-
       <div class="about_blog">
-        <h6>About</h6>
-        <p>Mission & Values</p>
-        <p>KQS Leadership</p>
+        <h5>about</h5>
+        <a href="">Mission & Values</a>
+        <a href="">KQS Leadership</a>
         <hr />
-        <h6>Blog</h6>
-        <p>Industry News</p>
-        <p>Regulatory News</p>
-        <p>White Papers</p>
+        <h5>resources</h5>
+        <a href="">Blog</a>
       </div>
     </div>
-
     <div class="footer_bottom">
-      <p>Web Design by Angel Oleathia</p>
-      <!-- <img class="footer_img" src="icons/ao_logo.svg" alt="" /> -->
+      <a href="https://angeloleathia.com">Web Design by Angel Oleathia</a>
     </div>
   </footer>
 </html>
