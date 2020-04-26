@@ -15,51 +15,83 @@
           src="/icons/KQSLogo_Horizontal_Dark.svg"
           alt="Key Quality Solutions Logo Horizontal png"
         />
-        <img src="/icons/menu.svg" alt="" />
+        <div class="dropdown dropdown_mobile_menu">
+          <img
+            onclick="myFunction()"
+            class="mobile_menu_icon remove"
+            src="/icons/menu.svg"
+            alt=""
+          />
+
+          <div
+            class="dropdown dropdown_mobile_menu menu_container"
+            onclick="myFunction(); changeIcon(this)"
+          >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
+          <div
+            id="mobileDropdown"
+            class="dropdown-content dropdown_mobile dropdown_menu"
+          >
+            <input type="text" placeholder="Search" />
+            <div class="mobile_nav_bar">
+              <div class="mobile_pair">
+                <a href="index.html">home</a>
+                <hr />
+              </div>
+              <div class="mobile_pair">
+                <a onclick="insideMenuFunction()">about</a>
+                <hr />
+                <div id="mobile_hide" class="mobile_hide">
+                  <a href="kqs_about.html">mission & Values</a>
+                  <a href="kqs_leadership.html">kqs leadership</a>
+                </div>
+              </div>
+              <div class="mobile_pair">
+                <a href="services.html">services</a>
+                <hr />
+              </div>
+              <div class="mobile_pair">
+                <a href="blog.html">blog</a>
+                <hr />
+              </div>
+              <div class="mobile_pair">
+                <a href="contact.html">contact</a>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="regular_header">
-        <img class="header_img" src="/icons/logogmark_light.svg" alt="" />
-        <button href="index.html" class="dropdownbtn_about">home</button>
-        <div class="dropdown">
-          <button class="dropbtn">about</button>
-          <div class="dropdown-content dropdown_about .dropdown_menu">
-            <a href="kqs_about.html">Mission & Values</a>
-            <a href="kqs_leadership">KQS Leadership</a>
-          </div>
+        <div class="logo_side">
+          <img
+            class="header_img"
+            src="/icons/kqs_header_logo_light.svg"
+            alt=""
+          />
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">services</button>
-          <div class="dropdown-content dropdown_services .dropdown_menu">
-            <div class="QMS">
-              <h5>Quality Management:</h5>
-              <br />
-              <a>Regulatory Requirements</a>
-              <a>Quality Management Systems</a>
-              <a>Trainings</a>
-            </div>
-            <hr />
-            <div class="QAS">
-              <h5>Quality Assurance:</h5>
-              <br />
-              <a>Change Control</a>
-              <a>Supplier Management</a>
-              <a>Risk Management</a>
-              <a>Non-Conformance</a>
-              <a>Audits / Inspections</a>
+        <div class="nav_bar">
+          <a href="index.html" class="dropdownbtn_about">home</a>
+          <div class="dropdown">
+            <a class="dropbtn">about us</a>
+            <div class="dropdown-content dropdown_about .dropdown_menu">
+              <a href="kqs_about.html">Mission & Values</a>
+              <hr />
+              <a href="kqs_leadership">KQS Consultants</a>
             </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">resources</button>
-          <div class="dropdown-content dropdown_resources .dropdown_menu">
-            <a href="blog.html">Blog</a>
-          </div>
-        </div>
-        <button>contact</button>
-        <div class="dropdown">
-          <img class="dropbtn" src="/icons/search.svg" alt="" />
-          <div class="dropdown-content dropdown_search .dropdown_menu">
-            <input type="text" placeholder="Search" />
+          <a href="services.html" class="dropbtn">services</a>
+          <a href="blog.html" class="dropbtn">blog</a>
+          <a href="contact.html">contact</a>
+          <div class="dropdown">
+            <img class="dropbtn" src="/icons/search.svg" alt="" />
+            <div class="dropdown-content dropdown_search .dropdown_menu">
+              <input type="text" placeholder="Search" />
+            </div>
           </div>
         </div>
       </div>
@@ -141,16 +173,22 @@
         </div>
       </div>
     </section>
+    <script src="/javascript/main.js"></script>
   </body>
   <footer>
     <div class="footer_body">
       <div class="footer_about">
         <img class="footer_logo" src="/icons/HL_KQS_Logo.svg" alt="" />
-        <p>
-          Helping healthcare companies build an optimized business through
-          interoperable digital systems that achieve heightened quality on a
-          global scale.
-        </p>
+        <div class="pair">
+          <img src="/icons/location.svg" alt="" />
+          <p>Key Quality Solutions LLC</p>
+        </div>
+        <a
+          href="https://www.google.com/maps/place/2+Wisconsin+Cir+%23700,+Chevy+Chase,+MD+20815/@38.961587,-77.086164,18z/data=!3m1!4b1!4m8!1m2!2m1!1s2+Wisconsin+Circle,+Suite+700+%3Cbr+%2F%3E+++++++++++Chevy+Chase,+MD+20815!3m4!1s0x89b7c990cb923701:0xf4de32ff78f2a238!8m2!3d38.9615853!4d-77.0852943"
+          target="_blank"
+          >2 Wisconsin Circle, Suite 700 <br />
+          Chevy Chase, MD 20815</a
+        >
         <hr />
         <div class="pair">
           <img src="/icons/copyright.svg" alt="" />
@@ -160,59 +198,45 @@
       <div class="footer_contact">
         <h5>contact</h5>
         <div class="pair">
-          <img src="/icons/location.svg" alt="" />
-          <p>Key Quality Solutions LLC</p>
-        </div>
-        <a href=""
-          >2 Wisconsin Circle, Suite 700 <br />
-          Chevy Chase, MD 20815</a
-        >
-        <hr />
-        <div class="pair">
           <img src="/icons/mail.svg" alt="" />
           <a
             href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
+            target="_blank"
             >contactus@keyqualitysolutions.com</a
           >
         </div>
         <div class="pair">
           <img src="/icons/linkedin.svg" alt="" />
-          <a href="">@keyqualitysolutions</a>
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            >@keyqualitysolutions</a
+          >
         </div>
         <div class="pair">
           <img src="/icons/facebook.svg" alt="" />
-          <a href="">@keyqualitysolutions</a>
+          <a href="" target="_blank">@keyqualitysolutions</a>
         </div>
         <div class="pair">
           <img src="/icons/twitter.svg" alt="" />
-          <a href="">@keyqualitysolutions</a>
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            >@KeyQuality1</a
+          >
         </div>
-      </div>
-      <div class="footer_services">
-        <h5>services</h5>
-        <a href="">Supplier Management</a>
-        <a href="">Risk Management</a>
-        <a href="">Non-Conformance</a>
-        <a href="">Change Control</a>
-        <a href="">Audits / Inspections</a>
-        <a href="">Quality Management Systems</a>
-        <a href="">Trainings</a>
-        <a href="">Operation Site</a>
-        <a href="">Document Management</a>
-        <a href="">Product Complaints</a>
-        <a href="">CAPA Management</a>
       </div>
       <div class="about_blog">
         <h5>about</h5>
-        <a href="">Mission & Values</a>
-        <a href="">KQS Leadership</a>
+        <a href="kqs_about.html">Mission & Values</a>
+        <a href="kqs_leadership.html">KQS Leadership</a>
         <hr />
         <h5>resources</h5>
-        <a href="">Blog</a>
+        <a href="blog.html">Blog</a>
       </div>
     </div>
     <div class="footer_bottom">
-      <a href="https://angeloleathia.com">Web Design by Angel Oleathia</a>
+      <a href="https://angeloleathia.com" target="_blank"
+        >Web Design by Angel Oleathia</a
+      >
     </div>
   </footer>
 </html>

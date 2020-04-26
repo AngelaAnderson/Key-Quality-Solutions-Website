@@ -1,14 +1,14 @@
-let toggleStatus = false;
-function toggleNav() {
-  let getAbout = document.querySelector("body header .dropdown_about");
-  let getServices = document.querySelector("body header .dropdown_services");
-  let getResources = document.querySelector("body header .dropdown_resources");
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("mobileDropdown").classList.toggle("show");
+}
+function changeIcon(x) {
+  x.classList.toggle("change");
+}
 
-  if (document.getElementById("about")) {
-    getAbout.style.display = "flex";
-  } else if (document.getElementById("services")) {
-    getServices.style.display = "flex";
-  } else {
-    let toggleStatus = true;
-  }
+/* When the user clicks on the button,
+toggle between hiding and showing the about pages */
+function insideMenuFunction() {
+  document.getElementById("mobile_hide").classList.toggle("show_about");
 }
