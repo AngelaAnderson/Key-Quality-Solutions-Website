@@ -97,12 +97,32 @@
       </div>
       <div class="filter">
         <div class="byType">
-          <p>Filter by Type</p>
-          <img src="/icons/down_arrow.svg" alt="" />
+          <div class="filter_group">
+            <p>Filter by Type</p>
+            <img src="/icons/down_arrow.svg" alt="" />
+          </div>
+          <div class="hide_type">
+            <a class="filter_text" href="">Industry News</a>
+            <hr />
+            <a class="filter_text" href="">White Papers</a>
+          </div>
         </div>
-        <div class="byDate">
-          <p>Filter by Date</p>
-          <img src="/icons/down_arrow.svg" alt="" />
+        <div onclick="filterFunction()" class="byDate">
+          <div class="filter_group">
+            <p>Filter by Date</p>
+            <img src="/icons/down_arrow.svg" alt="" />
+          </div>
+          <div id="hide_type" class="hide_type">
+            <div class="pair">
+              <img src="/icons/sort_new.svg" alt="" />
+              <a class="filter_text" href="">New to Old</a>
+            </div>
+            <hr />
+            <div class="pair">
+              <img src="/icons/sort_old.svg" alt="" />
+              <a class="filter_text" href="">Old to New</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

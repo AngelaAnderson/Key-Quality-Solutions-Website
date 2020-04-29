@@ -174,21 +174,15 @@ header {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* Show the dropdown menu*/
 .mobile_hide {
   display: none;
-  margin-bottom: 30px;
   margin-top: 15px;
 }
 .mobile_hide a {
   font-size: 12px;
 }
-.show,
-.show_about {
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-}
+
 .mobile_menu_icon_two {
   display: none;
 }
@@ -354,7 +348,7 @@ header {
 }
 .container_four,
 .container_two {
-  object-fit: fill;
+  object-fit: cover;
   height: auto;
   width: 100%;
 }
@@ -437,10 +431,6 @@ footer .pair img {
   display: none;
 }
 
-.container_two {
-  background: url("../imgs/homepage_img_one.svg") cover no-repeat;
-}
-
 /* -----------Search Page CSS----------- */
 .body_copy {
   box-sizing: border-box;
@@ -454,7 +444,6 @@ footer .pair img {
   border-radius: 2px;
   display: flex;
   height: 80px;
-  margin-bottom: 25px;
   width: 100%;
   text-align: center;
 }
@@ -574,11 +563,42 @@ footer .pair img {
   justify-content: space-between;
   margin-bottom: 35px;
 }
-
+.hide_type {
+  background: #eaeaec;
+  box-sizing: border-box;
+  /* display: none; */
+  height: 100px;
+  left: 400px;
+  padding: 10px 15px;
+  top: 50px;
+  width: 150px;
+  z-index: 2;
+}
+.hide_type a {
+  background: none;
+  border: none;
+  color: #024a69;
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 400;
+  height: 20px;
+  letter-spacing: 0.05em;
+  outline: none;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.hide_type hr {
+  border: 0.5px solid #e97770;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
 .byType,
 .byDate {
   background: #024a69;
   display: flex;
+  flex-direction: column;
   height: 25px;
   text-align: center;
   width: 110px;
@@ -591,6 +611,17 @@ footer .pair img {
   margin-right: 5px;
   margin-left: 10px;
   padding: 0px 5px;
+}
+.filter_group {
+  display: flex;
+}
+.hide_type .pair img {
+  height: 15px;
+  width: 15px;
+}
+.byType .hide_type,
+.byDate .hide_type {
+  display: none;
 }
 .left_side_blog {
   margin-top: 25px;
@@ -870,41 +901,150 @@ form .agile-label {
   margin-bottom: 15px;
 }
 /* -----------Services Page CSS----------- */
+.top_header_services {
+  background: #024a69;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_header_services .container_two,
+.top_header_services .container_one {
+  float: right;
+  height: 450px;
+  width: 100%;
+}
+.top_header_services .container_one {
+  box-sizing: border-box;
+  height: 100%;
+  margin-top: 50px;
+  padding-left: 25px;
+}
+.top_header_services .container_one h3 {
+  margin-bottom: 25px;
+}
+.top_header_services .container_one h1 {
+  font-size: 24px;
+}
+.top_header_services .container_two img {
+  object-fit: cover;
+  width: 100%;
+}
 .services_heading h3 {
   margin-bottom: 25px;
 }
-
-/* -----------Services Page CSS----------- */
 .services_section {
   margin: auto;
   text-align: center;
 }
 .services_section h1 {
   color: #024a69;
-  margin-top: 100px;
+  padding-top: 75px;
   margin-bottom: 25px;
 }
 .services_section h4 {
   color: #3b454d;
-  font-size: 22px;
+  font-size: 16px;
 }
 .services_section .services {
   display: flex;
+  flex-direction: column;
 }
 .service_group .pair {
   display: flex;
   vertical-align: middle;
 }
 .pair img {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
 }
 .pair h6 {
   color: #024a69;
-  font-size: 18px;
-  height: 20px;
+  font-size: 14px;
+  height: 15px;
   margin-bottom: 0px;
 }
+.service_group p {
+  text-align: left;
+}
+.services {
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 0px 25px;
+}
+.service_group {
+  margin-bottom: 50px;
+}
+.service_group .pair {
+  display: flex;
+  margin-bottom: 25px;
+}
+.service_group .pair img {
+  margin-right: 10px;
+}
+.hide_service {
+  display: none;
+  flex-direction: column;
+}
+
+.sub_pair {
+  display: flex;
+}
+.sub_pair img {
+  margin-right: 15px;
+}
+.service_group hr {
+  border: 0.5px solid #02577a;
+  margin-top: 25px;
+}
+.service_button {
+  background: #e97770;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f2ecdb;
+  font-family: Roboto;
+  height: 25px;
+  margin-top: 25px;
+  width: 100px;
+}
+.show,
+.show_about {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.hide_service .bold {
+  color: #3b454d;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.rotate {
+  transform: rotate(-90deg);
+}
+.additionalServices h6 {
+  color: #024a69;
+  margin-bottom: 50px;
+}
+.additionalServices .ca_buttons {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+.additionalServices .ca_buttons p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.additionalServices .contact_button,
+.additionalServices .appointment_button {
+  border-radius: 2px;
+  font-family: Roboto;
+  font-size: 14px;
+  height: 30px;
+  width: 100%;
+}
+
 @media only screen and (min-width: 425px) {
   .blog_post_img img {
     left: 20%;
@@ -982,6 +1122,12 @@ form .agile-label {
     line-height: 16px;
     margin-bottom: 20px;
     text-transform: uppercase;
+  }
+  .floatingAboutButton {
+    width: 150px;
+    position: absolute;
+    left: 350px;
+    top: 375px;
   }
   /* -----------Search Page CSS----------- */
   .body_copy {
@@ -1147,6 +1293,40 @@ form .agile-label {
     left: 27%;
     width: 380px;
   }
+  /* -----------Services Page CSS----------- */
+  .services {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0px 150px;
+  }
+  .right_services .service_group,
+  .left_services .service_group {
+    width: 465px;
+  }
+  .additionalServices .ca_buttons {
+    display: flex;
+    flex-direction: row;
+    width: 460px;
+  }
+  .additionalServices .contact_button,
+  .additionalServices .appointment_button {
+    width: 150px;
+  }
+  .top_header_services {
+    flex-direction: row;
+  }
+  .top_header_services .container_one {
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-top: 100px;
+    height: 100%;
+    width: 50%;
+  }
+  .top_header_services .container_one h1 {
+    width: 350px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   p {
@@ -1176,8 +1356,11 @@ form .agile-label {
     justify-content: space-between;
     width: 700px;
   }
+  .nav_bar a {
+    cursor: default;
+  }
   .regular_header a,
-  .dropdown a {
+  .dropdown {
     background: none;
     border: none;
     color: #024a69;
@@ -1267,6 +1450,9 @@ form .agile-label {
     right: 100px;
     top: 50px;
   }
+  .show_dropdown {
+    display: flex;
+  }
 
   .dropdown_search input {
     background: #eaeaec;
@@ -1308,19 +1494,10 @@ form .agile-label {
   .dropdown {
     align-items: center;
     display: flex;
-    margin: auto;
   }
   .dropdown img {
     height: 20px;
     width: 20px;
-  }
-  /* Show the dropdown menu on click */
-  .dropdown_mobile_menu:hover .dropdown_mobile {
-    display: flex;
-  }
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: flex;
   }
   .row_column {
     flex-direction: row;
@@ -1334,7 +1511,19 @@ form .agile-label {
     width: 50%;
   }
   .container_three {
-    width: 50%;
+    box-sizing: border-box;
+    height: 600px;
+    padding: 50px 250px;
+    width: 100%;
+  }
+  .container_four {
+    display: none;
+  }
+
+  .section_services .service_offerings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .container_one h1,
   .container_one_contact h1 {
@@ -1357,12 +1546,12 @@ form .agile-label {
     letter-spacing: 0.05em;
     outline: none;
     position: absolute;
-    top: 500px;
+    top: 520px;
     width: 124px;
   }
   .container_two {
     height: 100%;
-    width: 45%;
+    width: 100%;
   }
   .group_two .box,
   .group_three .box {
@@ -1383,6 +1572,7 @@ form .agile-label {
     position: absolute;
     height: 300px;
     left: 150px;
+    top: 1700px;
     width: 70%;
   }
 
@@ -1420,6 +1610,16 @@ form .agile-label {
     display: flex;
     flex-direction: column;
   }
+  .container_two img {
+    height: 543px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .focus_areas h2,
+  .blog_posts h2 {
+    font-size: 22px;
+    line-height: 33px;
+  }
   /* -----------Search Page CSS----------- */
   .details p {
     font-size: 12px;
@@ -1429,7 +1629,7 @@ form .agile-label {
     width: 180px;
   }
   .search_bar {
-    padding: 0px 200px;
+    padding: 0px 50px;
   }
   .byType,
   .byDate {
@@ -1521,6 +1721,66 @@ form .agile-label {
     font-size: 30px;
     line-height: 45px;
   }
+  /* -----------Services Page CSS----------- */
+  .services {
+    padding: 0px 50px;
+  }
+  .services_section .services {
+    flex-direction: row;
+  }
+  .sub_offering_group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .pair h6 {
+    font-size: 18px;
+    height: 20px;
+  }
+  .pair img {
+    height: 20px;
+    width: 20px;
+  }
+  .service_group .pair img {
+    margin-right: 15px;
+  }
+  .right_services .service_group,
+  .left_services .service_group {
+    margin-bottom: 75px;
+    width: 420px;
+  }
+  .hide_service .bold {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+    text-align: left;
+  }
+
+  .top_header_services .container_two,
+  .top_header_services .container_one {
+    float: right;
+    height: 350px;
+    width: 50%;
+  }
+  .top_header_services .container_two img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+  .top_header_services .container_one {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .top_header_services .container_one h1 {
+    margin-bottom: 0px;
+  }
+  .top_header_services .container_one h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  footer .footer_body {
+    padding: 50px 100px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1549,8 +1809,13 @@ form .agile-label {
     right: 180px;
     top: 50px;
   }
+  .container_two img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
   .section_about .container_one {
-    padding: 75px 140px;
+    padding: 60px 140px;
   }
   .container_one h1,
   .container_three h1,
@@ -1576,18 +1841,31 @@ form .agile-label {
     margin-right: 50px;
   }
   .section_testimonials {
-    bottom: -950px;
+    bottom: -1000px;
     position: absolute;
     height: 300px;
     left: 450px;
     width: 750px;
+  }
+  .container_three {
+    box-sizing: border-box;
+    height: 600px;
+    padding: 75px 150px;
+    width: 80%;
+  }
+  .container_four {
+    display: flex;
+  }
+  .container_four img {
+    height: 100%;
+    object-fit: cover;
   }
   footer .footer_body {
     background: #024a69;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 50px 450px;
+    padding: 50px 250px;
   }
   .focus_areas .group_two {
     padding: 0px 200px;
@@ -1605,6 +1883,9 @@ form .agile-label {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 5px;
+  }
+  .search_bar {
+    padding: 0px 200px;
   }
   /* -----------Blog Page CSS----------- */
   .blog_shortcut {
@@ -1671,5 +1952,26 @@ form .agile-label {
   /* -----------Contact Page CSS----------- */
   .container_one_contact .ca_buttons {
     width: 80%;
+  }
+  /* -----------Services Page CSS----------- */
+  .services {
+    background: url("../imgs/dot_squares.svg") cover no-repeat;
+    padding: 0px 250px;
+  }
+  .right_services .service_group,
+  .left_services .service_group {
+    width: 500px;
+  }
+  .services_section {
+    background: url("../imgs/dot_squares.svg") no-repeat;
+    background-size: contain;
+    margin-top: 0px;
+  }
+  .top_header_services .container_one {
+    padding-left: 150px;
+    padding-top: 50px;
+  }
+  .top_header_services .container_one h1 {
+    width: 550px;
   }
 }

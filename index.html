@@ -78,8 +78,8 @@
         <div class="nav_bar">
           <a href="index.html" class="dropdownbtn_about">home</a>
           <div class="dropdown">
-            <a class="dropbtn">about us</a>
-            <div class="dropdown-content dropdown_about .dropdown_menu">
+            <a onclick="navFunction()" class="dropbtn">about us</a>
+            <div id="dropdown_about" class="dropdown-content dropdown_about">
               <a href="kqs_about.html">Mission & Values</a>
               <hr />
               <a href="kqs_leadership">KQS Consultants</a>
@@ -89,8 +89,13 @@
           <a href="blog.html" class="dropbtn">blog</a>
           <a href="contact.html">contact</a>
           <div class="dropdown">
-            <img class="dropbtn" src="/icons/search.svg" alt="" />
-            <div class="dropdown-content dropdown_search .dropdown_menu">
+            <img
+              onclick="searchFunction()"
+              class="dropbtn"
+              src="/icons/search.svg"
+              alt=""
+            />
+            <div id="dropdown_search" class="dropdown_search">
               <input type="text" placeholder="Search" />
             </div>
           </div>
