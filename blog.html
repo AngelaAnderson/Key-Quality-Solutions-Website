@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xfe4dst.css" />
+    <link rel="shortcut icon" type="image/svg" href="/icons/favicon.svg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
@@ -72,21 +73,21 @@
         <div class="nav_bar">
           <a href="index.html" class="dropdownbtn_about">home</a>
           <div class="dropdown">
-            <a class="dropbtn">about us</a>
-            <div class="dropdown-content dropdown_about .dropdown_menu">
-              <a class="menu_text" href="kqs_about.html">Mission & Values</a>
+            <a onclick="navFunction()" class="dropbtn">about us</a>
+            <div id="dropdown_about" class="dropdown-content dropdown_about">
+              <a href="kqs_about.html">Mission & Values</a>
               <hr />
-              <a class="menu_text" href="kqs_leadership">KQS Consultants</a>
+              <a href="kqs_leadership.html">KQS Consultants</a>
             </div>
           </div>
           <a href="services.html" class="dropbtn">services</a>
           <a href="blog.html" class="dropbtn">blog</a>
           <a href="contact.html">contact</a>
-          <div class="dropdown">
+          <div onclick="searchFunction()" class="dropdown">
             <img class="dropbtn" src="/icons/search_light.svg" alt="" />
-            <div class="dropdown-content dropdown_search .dropdown_menu">
-              <input type="text" placeholder="Search" />
-            </div>
+          </div>
+          <div id="dropdown_search" class="dropdown_search">
+            <input type="text" placeholder="Search" />
           </div>
         </div>
       </div>
@@ -96,12 +97,12 @@
         <input type="text" placeholder="Search" />
       </div>
       <div class="filter">
-        <div class="byType">
+        <div onclick="filterFunction()" class="byType">
           <div class="filter_group">
             <p>Filter by Type</p>
             <img src="/icons/down_arrow.svg" alt="" />
           </div>
-          <div class="hide_type">
+          <div id="hide_type" class="hide_type">
             <a class="filter_text" href="">Industry News</a>
             <hr />
             <a class="filter_text" href="">White Papers</a>
@@ -112,7 +113,7 @@
             <p>Filter by Date</p>
             <img src="/icons/down_arrow.svg" alt="" />
           </div>
-          <div id="hide_type" class="hide_type">
+          <div id="hide_date" class="hide_type">
             <div class="pair">
               <img src="/icons/sort_new.svg" alt="" />
               <a class="filter_text" href="">New to Old</a>
@@ -141,13 +142,28 @@
           </div>
           <div class="available_blog_posts">
             <div class="post">
-              <img src="/imgs/contact_img.svg" alt="" />
-              <h3>Digital Innovations for Pharmaceutical Companies</h3>
+              <a href="blog_post_1.html"
+                ><img src="/imgs/blog_img_1.svg" alt=""
+              /></a>
+              <a href="blog_post_1.html"
+                ><h3>Digital Innovations for Pharmaceutical Companies</h3></a
+              >
             </div>
 
             <div class="post">
-              <img src="imgs/contact_img.svg" alt="" />
-              <h3>Creating a Digital Factory</h3>
+              <a href="blog_post_2.html"
+                ><img src="imgs/blog_img_2.svg" alt=""
+              /></a>
+              <a href="blog_post_2.html"><h3>Creating a Digital Factory</h3></a>
+            </div>
+
+            <div class="post">
+              <a href="blog_post_3.html"
+                ><img src="imgs/blog_img_3.svg" alt=""
+              /></a>
+              <a href="blog_post_3.html"
+                ><h3>Augmented Reality and the Pharma Industry</h3></a
+              >
             </div>
           </div>
         </section>
@@ -160,35 +176,47 @@
           <div class="shortcut_blog_posts">
             <div class="shortcut_post">
               <div class="shortcut_group">
-                <h3>Digital Innovations for Pharmaceutical Companies</h3>
+                <a href="blog_post_1.html"
+                  ><h3>Digital Innovations for Pharmaceutical Companies</h3></a
+                >
                 <div class="details">
                   <p>Apr. 4, 2020</p>
                   <p>5 min read</p>
                 </div>
               </div>
-              <img src="/imgs/contact_img.svg" alt="" />
+              <a href="blog_post_1.html"
+                ><img src="/imgs/blog_img_1.svg" alt=""
+              /></a>
             </div>
 
             <div class="shortcut_post">
               <div class="shortcut_group">
-                <h3>Digital Innovations for Pharmaceutical Companies</h3>
+                <a href="blog_post_2.html"
+                  ><h3>Creating a Digital Factory</h3></a
+                >
                 <div class="details">
                   <p>Apr. 4, 2020</p>
                   <p>5 min read</p>
                 </div>
               </div>
-              <img src="/imgs/contact_img.svg" alt="" />
+              <a href="blog_post_2.html"
+                ><img src="/imgs/blog_img_2.svg" alt=""
+              /></a>
             </div>
 
             <div class="shortcut_post">
               <div class="shortcut_group">
-                <h3>Digital Innovations for Pharmaceutical Companies</h3>
+                <a href="blog_post_3.html"
+                  ><h3>Augmented Reality and the Pharma Industry</h3></a
+                >
                 <div class="details">
                   <p>Apr. 4, 2020</p>
                   <p>5 min read</p>
                 </div>
               </div>
-              <img src="/imgs/contact_img.svg" alt="" />
+              <a href="blog_post_3.html"
+                ><img src="/imgs/blog_img_3.svg" alt=""
+              /></a>
             </div>
           </div>
         </section>
@@ -219,29 +247,59 @@
       <div class="footer_contact">
         <h5>contact</h5>
         <div class="pair">
-          <img src="/icons/mail.svg" alt="" />
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            ><img src="/icons/twitter.svg" alt=""
+          /></a>
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            >@KeyQuality1</a
+          >
+        </div>
+
+        <div class="pair">
+          <a href="https://www.instagram.com/key2quality/" target="_blank"
+            ><img src="/icons/instagram.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/key2quality/" target="_blank"
+            >@Key2Quality</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+            target="_blank"
+            ><img src="/icons/facebook.svg" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+            target="_blank"
+            >@KeyQualitySolutions</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            ><img src="/icons/linkedin.svg" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            >@KenyattaScottOliphant</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
+            target="_blank"
+            ><img src="/icons/mail.svg" alt=""
+          /></a>
           <a
             href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
             target="_blank"
             >contactus@keyqualitysolutions.com</a
-          >
-        </div>
-        <div class="pair">
-          <img src="/icons/linkedin.svg" alt="" />
-          <a
-            href="https://www.linkedin.com/in/kenyattascottoliphant/"
-            target="_blank"
-            >@keyqualitysolutions</a
-          >
-        </div>
-        <div class="pair">
-          <img src="/icons/facebook.svg" alt="" />
-          <a href="" target="_blank">@keyqualitysolutions</a>
-        </div>
-        <div class="pair">
-          <img src="/icons/twitter.svg" alt="" />
-          <a href="https://twitter.com/KeyQuality1" target="_blank"
-            >@KeyQuality1</a
           >
         </div>
       </div>

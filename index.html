@@ -3,6 +3,13 @@
   <head>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/svg" href="/icons/favicon.svg" />
+    <script src="http://code.jquery.com/jquery-3.5.0.js"></script>
+    <script type="text/javascript">
+      $(window).on("load", function () {
+        $(".preloader").addClass("complete");
+      });
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
@@ -10,6 +17,7 @@
     </title>
   </head>
   <body>
+    <div id="loader" class="preloader"></div>
     <header>
       <div class="mobile_header">
         <img
@@ -82,22 +90,17 @@
             <div id="dropdown_about" class="dropdown-content dropdown_about">
               <a href="kqs_about.html">Mission & Values</a>
               <hr />
-              <a href="kqs_leadership">KQS Consultants</a>
+              <a href="kqs_leadership.html">KQS Consultants</a>
             </div>
           </div>
           <a href="services.html" class="dropbtn">services</a>
           <a href="blog.html" class="dropbtn">blog</a>
           <a href="contact.html">contact</a>
-          <div class="dropdown">
-            <img
-              onclick="searchFunction()"
-              class="dropbtn"
-              src="/icons/search.svg"
-              alt=""
-            />
-            <div id="dropdown_search" class="dropdown_search">
-              <input type="text" placeholder="Search" />
-            </div>
+          <div onclick="searchFunction()" class="dropdown">
+            <img class="dropbtn" src="/icons/search.svg" alt="" />
+          </div>
+          <div id="dropdown_search" class="dropdown_search">
+            <input type="text" placeholder="Search" />
           </div>
         </div>
       </div>
@@ -118,9 +121,24 @@
             </p>
             <hr />
             <div class="social_icons">
-              <img src="icons/linkedin.svg" alt="" />
-              <img src="icons/facebook.svg" alt="" />
-              <img src="icons/twitter.svg" alt="" />
+              <a
+                href="https://www.linkedin.com/in/kenyattascottoliphant/"
+                target="_blank"
+                ><img src="icons/linkedin.svg" alt=""
+              /></a>
+              <a
+                href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+                target="_blank"
+                ><img src="icons/facebook.svg" alt=""
+              /></a>
+
+              <a href="https://twitter.com/KeyQuality1" target="_blank"
+                ><img src="icons/twitter.svg" alt=""
+              /></a>
+
+              <a href="https://www.instagram.com/key2quality/" target="_blank"
+                ><img src="icons/instagram.svg" alt=""
+              /></a>
             </div>
           </div>
         </div>
@@ -156,9 +174,9 @@
           <img src="icons/supplier_management.svg" alt="" />
           <h5>Supplier Management</h5>
           <p>
-            We’ll show you digital advancements to improve your manufacturing
-            process and quickly get your product into the hands of patients and
-            healthcare professionals while maintaining regulatory standards.
+            At KQS we can help you transform your supply chain into an
+            intelligent, digital supply network that can rapidly respond to your
+            business needs.
           </p>
         </div>
 
@@ -176,9 +194,8 @@
           <img src="icons/quality_management_systems.svg" alt="" />
           <h5>Management Systems</h5>
           <p>
-            Our resourceful digital solutions and best practices can simplify
-            product testing and marketing as you introduce new cosmetic products
-            and continually meet the demands of your consumers.
+            Ready to take your company into the paperless QMS world? We can
+            help! At KQS we are experts in replacing paper QMS systems.
           </p>
         </div>
       </div>
@@ -259,10 +276,10 @@
     <section class="section_testimonials">
       <img src="/icons/quotes.svg" class="adjust_size" alt="" />
       <h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt etiam non. Mi quis hendrerit dolor magna.
+        "I love Kenyatta's drive and the way she pushes to get things done. She
+        sets expectations high and is able to deliver on them."
       </h4>
-      <p>-John Doe</p>
+      <p>- Faizah Khan, AstraZeneca</p>
       <img src="/imgs/dots1.svg" alt="" />
     </section>
 
@@ -271,18 +288,28 @@
       <h2>Read up on industry news and developments.</h2>
       <div class="group_three row_column">
         <div class="box">
-          <img src="" alt="" />
-          <h5>Digital Innovations for Pharmaceutical Companies</h5>
+          <a href="blog_post_1.html"
+            ><img src="/imgs/blog_img_1.svg" alt=""
+          /></a>
+          <a href="blog_post_1.html"
+            ><h5>Digital Innovations for Pharmaceutical Companies</h5></a
+          >
         </div>
 
         <div class="box">
-          <img src="" alt="" />
-          <h5>Creating a Digital Factory</h5>
+          <a href="blog_post_2.html"
+            ><img src="/imgs/blog_img_2.svg" alt=""
+          /></a>
+          <a href="blog_post_2.html"><h5>Creating a Digital Factory</h5></a>
         </div>
 
         <div class="box">
-          <img src="" alt="" />
-          <h5>Augmented Reality and the Pharma Industry</h5>
+          <a href="blog_post_3.html"
+            ><img src="/imgs/blog_img_3.svg" alt=""
+          /></a>
+          <a href="blog_post_3.html"
+            ><h5>Augmented Reality and the Pharma Industry</h5></a
+          >
         </div>
       </div>
     </section>
@@ -311,29 +338,59 @@
       <div class="footer_contact">
         <h5>contact</h5>
         <div class="pair">
-          <img src="/icons/mail.svg" alt="" />
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            ><img src="/icons/twitter.svg" alt=""
+          /></a>
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            >@KeyQuality1</a
+          >
+        </div>
+
+        <div class="pair">
+          <a href="https://www.instagram.com/key2quality/" target="_blank"
+            ><img src="/icons/instagram.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/key2quality/" target="_blank"
+            >@Key2Quality</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+            target="_blank"
+            ><img src="/icons/facebook.svg" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+            target="_blank"
+            >@KeyQualitySolutions</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            ><img src="/icons/linkedin.svg" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            >@KenyattaScottOliphant</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
+            target="_blank"
+            ><img src="/icons/mail.svg" alt=""
+          /></a>
           <a
             href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
             target="_blank"
             >contactus@keyqualitysolutions.com</a
-          >
-        </div>
-        <div class="pair">
-          <img src="/icons/linkedin.svg" alt="" />
-          <a
-            href="https://www.linkedin.com/in/kenyattascottoliphant/"
-            target="_blank"
-            >@keyqualitysolutions</a
-          >
-        </div>
-        <div class="pair">
-          <img src="/icons/facebook.svg" alt="" />
-          <a href="" target="_blank">@keyqualitysolutions</a>
-        </div>
-        <div class="pair">
-          <img src="/icons/twitter.svg" alt="" />
-          <a href="https://twitter.com/KeyQuality1" target="_blank"
-            >@KeyQuality1</a
           >
         </div>
       </div>

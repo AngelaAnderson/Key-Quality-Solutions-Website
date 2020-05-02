@@ -48,6 +48,12 @@ function servicesFunction() {
   }
 }
 
-function filterFunction() {
-  document.getElementById("hide_type").classList.toggle("show_dropdown");
-}
+// function filterFunction() {
+//   var x = document.getElementsByClassName("byType");
+//   var x = document.getElementsByClassName("byDate");
+//   if (x == "byType") {
+//     document.getElementById("hide_type").classList.toggle("show_type");
+//   } else if (x == "byDate"") {
+//     document.getElementById("hide_date").classList.toggle("show_type");
+//   }
+// }

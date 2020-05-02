@@ -64,11 +64,11 @@ label,
 select {
   color: #3b454d;
   font-family: Roboto;
-  font-style: thin;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.05em;
+  text-decoration: none;
 }
 /* This section contains all styling information for the header. */
 header {
@@ -86,6 +86,9 @@ header {
 }
 .blue_header .regular_header a {
   color: #eaeaec;
+}
+.blue_header .regular_header .dropdown_about a {
+  color: #024a69;
 }
 
 .mobile_header {
@@ -305,6 +308,9 @@ header {
   font-weight: 600;
   line-height: 24px;
 }
+.focus_areas .box h5 {
+  text-align: center;
+}
 .focus_areas .group_two,
 .group_three {
   display: flex;
@@ -322,6 +328,7 @@ header {
 .box h5 {
   margin-bottom: 15px;
   margin-top: 25px;
+  text-align: center;
 }
 
 .section_services .container_four {
@@ -368,9 +375,10 @@ header {
   margin-bottom: 15px;
 }
 .blog_posts .box img {
-  height: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 150px;
   object-fit: cover;
-  width: 120px;
+  width: 220px;
 }
 
 .floatingButton {
@@ -566,7 +574,6 @@ footer .pair img {
 .hide_type {
   background: #eaeaec;
   box-sizing: border-box;
-  /* display: none; */
   height: 100px;
   left: 400px;
   padding: 10px 15px;
@@ -619,9 +626,12 @@ footer .pair img {
   height: 15px;
   width: 15px;
 }
-.byType .hide_type,
-.byDate .hide_type {
+.hide_type {
   display: none;
+}
+.show_type {
+  display: flex;
+  flex-direction: column;
 }
 .left_side_blog {
   margin-top: 25px;
@@ -656,6 +666,11 @@ footer .pair img {
   padding: 0px 30px;
   width: 100%;
 }
+.details_post p {
+  color: #024a69;
+  font-size: 16px;
+  font-weight: 500;
+}
 /* -----------About Leadership Page CSS----------- */
 .header_about {
   background: url("../imgs/header.svg") no-repeat;
@@ -677,8 +692,15 @@ footer .pair img {
 .about {
   box-sizing: border-box;
   padding: 0px 50px;
+  margin: auto;
   margin-top: 220px;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
+}
+
+.about a {
+  color: #024a69;
+  font-size: 14px;
+  font-weight: 600;
 }
 .about h2 {
   color: #024a69;
@@ -687,7 +709,7 @@ footer .pair img {
 }
 
 .about h6 {
-  color: #024a69;
+  color: #e97770;
   font-size: 14px;
   margin-bottom: 35px;
 }
@@ -723,6 +745,7 @@ footer .pair img {
 .value_pair {
   display: flex;
   flex-direction: column;
+  height: 200px;
   margin: auto;
   margin-bottom: 50px;
   text-align: center;
@@ -936,6 +959,9 @@ form .agile-label {
   margin: auto;
   text-align: center;
 }
+.space_below {
+  margin-bottom: 30px;
+}
 .services_section h1 {
   color: #024a69;
   padding-top: 75px;
@@ -1082,13 +1108,17 @@ form .agile-label {
     width: 450px;
   }
   .focus_areas {
-    background: url("../imgs/dots1.svg") cover no-repeat;
+    background: url("../imgs/digital_squares.svg") no-repeat;
+    background-size: cover;
   }
   .focus_areas .group_two,
   .group_three {
     box-sizing: border-box;
     justify-content: space-between;
     padding: 0px 50px;
+    text-align: left;
+  }
+  .focus_areas .box h5 {
     text-align: left;
   }
   .group_two .box {
@@ -1142,7 +1172,7 @@ form .agile-label {
     width: 100%;
   }
   .blog_shortcut {
-    margin-top: 100px;
+    margin-top: 0px;
   }
   .left_side,
   .right_side {
@@ -1196,7 +1226,7 @@ form .agile-label {
   }
   .about {
     margin-top: 50px;
-    width: 600px;
+    width: 800px;
   }
   .header_about h3 {
     font-size: 16px;
@@ -1334,7 +1364,8 @@ form .agile-label {
     line-height: 25px;
     /* margin-bottom: 25px; */
   }
-  h1 {
+  h1,
+  .left_side_post h1 {
     font-size: 40px;
     line-height: 65px;
   }
@@ -1441,14 +1472,15 @@ form .agile-label {
     width: 100px;
   }
   .dropdown_search {
-    background: #eaeaec;
+    background: #024a69;
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: none;
     height: 100px;
-    width: 360px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+    position: absolute;
     right: 100px;
     top: 50px;
+    width: 360px;
   }
   .show_dropdown {
     display: flex;
@@ -1464,7 +1496,7 @@ form .agile-label {
 
   .dropdown_search input[type="text"],
   .search_shortcut input[type="text"] {
-    background: rgba(59, 69, 77, 0.2);
+    background: #e5e5e5;
     background-image: url(../icons/search.svg);
     background-position: 10px;
     background-repeat: no-repeat;
@@ -1575,6 +1607,10 @@ form .agile-label {
     top: 1700px;
     width: 70%;
   }
+  .section_testimonials h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 
   .blog_posts {
     margin-top: 350px;
@@ -1582,9 +1618,9 @@ form .agile-label {
   }
 
   .blog_posts .box img {
-    height: 122px;
+    height: 160px;
     object-fit: cover;
-    width: 210px;
+    width: 100%;
   }
   .floatingButton {
     display: block;
@@ -1641,7 +1677,8 @@ form .agile-label {
     font-size: 14px;
   }
   .filter {
-    width: 350px;
+    padding-right: 25px;
+    width: 390px;
   }
   .byType p,
   .byDate p {
@@ -1651,6 +1688,7 @@ form .agile-label {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 100px;
   }
   .search_content h2 {
     font-size: 40px;
@@ -1663,22 +1701,30 @@ form .agile-label {
     width: 500px;
   }
   .about .img_of_kenyatta {
+    position: inherit;
+    margin-left: 25px;
     right: 50px;
-    top: 250px;
-    width: 372px;
+    width: 472px;
   }
   .about {
-    width: 682px;
+    width: 1082px;
   }
-
-  .about .brands img {
-    height: 45px;
+  .about_kqs {
+    width: 782px;
+    margin: 0px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+  }
+  .about img {
+    float: right;
   }
   .about h2 {
-    font-size: 24px;
+    font-size: 34px;
   }
   .about h6 {
-    font-size: 16px;
+    color: #e97770;
+    font-size: 18px;
+    margin-top: 25px;
   }
   .ms_img {
     width: 350px;
@@ -1720,6 +1766,14 @@ form .agile-label {
   .blog_content .heading h2 {
     font-size: 30px;
     line-height: 45px;
+  }
+  .social_icons_blog img {
+    height: 20px;
+    margin-left: 10px;
+    width: 20px;
+  }
+  .left_side_post h1 {
+    margin-bottom: 50px;
   }
   /* -----------Services Page CSS----------- */
   .services {
@@ -1797,16 +1851,6 @@ form .agile-label {
   }
   .dropdown_about {
     left: 950px;
-    top: 50px;
-  }
-  .dropdown_search {
-    display: none;
-    height: 100px;
-    width: 360px;
-    background: #eaeaec;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    right: 180px;
     top: 50px;
   }
   .container_two img {
@@ -1902,10 +1946,10 @@ form .agile-label {
     padding: 0px 250px;
   }
   .about {
-    width: 982px;
+    width: 1482px;
   }
   .about .img_of_kenyatta {
-    right: 350px;
+    right: 250px;
   }
   .header_about {
     box-sizing: border-box;
@@ -1928,6 +1972,9 @@ form .agile-label {
   .theme7 {
     width: 600px;
   }
+  .about_kqs {
+    width: 1082px;
+  }
   /* -----------Blog Post Page CSS----------- */
   .post_copy {
     width: 650px;
@@ -1939,7 +1986,7 @@ form .agile-label {
     width: 650px;
   }
   .body_copy_post {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 200px;
     margin-bottom: 50px;
   }

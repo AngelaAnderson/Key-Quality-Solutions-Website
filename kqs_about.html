@@ -4,9 +4,10 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xfe4dst.css" />
+    <link rel="shortcut icon" type="image/svg" href="/icons/favicon.svg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Key Quality Solutions | Meet Your Consultant</title>
+    <title>Key Quality Solutions | About KQS</title>
   </head>
   <body>
     <header>
@@ -77,21 +78,21 @@
         <div class="nav_bar">
           <a href="index.html" class="dropdownbtn_about">home</a>
           <div class="dropdown">
-            <a class="dropbtn">about us</a>
-            <div class="dropdown-content dropdown_about .dropdown_menu">
+            <a onclick="navFunction()" class="dropbtn">about us</a>
+            <div id="dropdown_about" class="dropdown-content dropdown_about">
               <a href="kqs_about.html">Mission & Values</a>
               <hr />
-              <a href="kqs_leadership">KQS Consultants</a>
+              <a href="kqs_leadership.html">KQS Consultants</a>
             </div>
           </div>
           <a href="services.html" class="dropbtn">services</a>
           <a href="blog.html" class="dropbtn">blog</a>
           <a href="contact.html">contact</a>
-          <div class="dropdown">
+          <div onclick="searchFunction()" class="dropdown">
             <img class="dropbtn" src="/icons/search.svg" alt="" />
-            <div class="dropdown-content dropdown_search .dropdown_menu">
-              <input type="text" placeholder="Search" />
-            </div>
+          </div>
+          <div id="dropdown_search" class="dropdown_search">
+            <input type="text" placeholder="Search" />
           </div>
         </div>
       </div>
@@ -102,23 +103,29 @@
       <h1>Building Healthier Communities Through Innovative Technology</h1>
     </section>
 
-    <section class="about">
+    <section class="about_kqs about">
       <h2>About Key Quality Solutions</h2>
       <p>
-        Our offering is in our name. We’re a consultancy that paves the way for
-        heightened quality on a global scale. We’re so thoroughly versed in the
-        medical, pharmaceutical, and biotech worlds, we’ve made it our passion
-        to meet your needs, accelerate your growth, and equip you with every
-        advantage — particularly in the digital sphere. We’ll demonstrate all
-        the advancements that maintain compliance and increase performance as
-        you continue to expand. <br />
+        Our offering is our name. Key Quality Solutions (KQS) believes that by
+        enhancing the quality of individual lives today will advance the quality
+        of the world tomorrow. KQS is committed to improving health outcomes for
+        patients by digitizing how biopharmaceutical businesses connect and
+        deliver high-quality products. KQS is a consultancy that helps move
+        businesses forward with their digital transformation, by offering
+        virtual or on-site quality services that then help manage their
+        operations. We provide quality systems management, supplier management,
+        inspection readiness, good clinical practices services, and business
+        strategies for new and existing products. <br />
         <br />
-        Think about it: your products and services reﬂect the most cutting-edge
-        developments of the 21st century. Let the business itself compliment
-        those innovations with agile operations streamlined for the digital age.
-        For every company within these industries, efﬁciency is everything.
-        We’re here to advise, we’re here to support, we’re here to ensure that
-        you’re never outpaced.
+        KQS offers more than 30 years of experience in the biologics,
+        pharmaceutical drugs, and medical device industry. We are a small
+        women-run business using our in-depth knowledge of good laboratory
+        practices and good manufacturing practices to create processes,
+        procedures, and systems at various stages of the product lifecycle. We
+        will advise you on best-in-class solutions and support for the testing
+        and validation of your systems. We build agile systems that deliver data
+        at increased speeds to improve, innovate, and optimize your clinical
+        trial and marketed products.
       </p>
       <img class="ms_img" src="/imgs/mv_img.svg" alt="" />
       <button class="red_button">KQS Consultants</button>
@@ -142,10 +149,11 @@
           </p>
         </div>
         <div class="value_pair">
-          <h2>Awareness</h2>
+          <h2>Agility</h2>
           <p>
-            Our consultants constantly improve themselves every single day to
-            maintain our professional edge.
+            Our team excels at thinking 'outside the box' by providing
+            cutting-edge technology solutions for our customers who are at the
+            heart of every decision we make.
           </p>
         </div>
 
@@ -157,18 +165,11 @@
           </p>
         </div>
         <div class="value_pair">
-          <h2>User Experience</h2>
+          <h2>Efficiency</h2>
           <p>
-            We want to offer practical, experiential, affective and meaningful
-            services to make running your business easier!
-          </p>
-        </div>
-        <div class="value_pair">
-          <h2>Motivation</h2>
-          <p>
-            Our team of professionals is available to put their all into each
-            client so you can rest assured, knowing that you can rely on an
-            authoritative organization.
+            We make things simple again. We want to offer practical,
+            experiential, affective and meaningful services to make running your
+            business easier!
           </p>
         </div>
       </div>
@@ -198,29 +199,59 @@
       <div class="footer_contact">
         <h5>contact</h5>
         <div class="pair">
-          <img src="/icons/mail.svg" alt="" />
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            ><img src="/icons/twitter.svg" alt=""
+          /></a>
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            >@KeyQuality1</a
+          >
+        </div>
+
+        <div class="pair">
+          <a href="https://www.instagram.com/key2quality/" target="_blank"
+            ><img src="/icons/instagram.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/key2quality/" target="_blank"
+            >@Key2Quality</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+            target="_blank"
+            ><img src="/icons/facebook.svg" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+            target="_blank"
+            >@KeyQualitySolutions</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            ><img src="/icons/linkedin.svg" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            >@KenyattaScottOliphant</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
+            target="_blank"
+            ><img src="/icons/mail.svg" alt=""
+          /></a>
           <a
             href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
             target="_blank"
             >contactus@keyqualitysolutions.com</a
-          >
-        </div>
-        <div class="pair">
-          <img src="/icons/linkedin.svg" alt="" />
-          <a
-            href="https://www.linkedin.com/in/kenyattascottoliphant/"
-            target="_blank"
-            >@keyqualitysolutions</a
-          >
-        </div>
-        <div class="pair">
-          <img src="/icons/facebook.svg" alt="" />
-          <a href="" target="_blank">@keyqualitysolutions</a>
-        </div>
-        <div class="pair">
-          <img src="/icons/twitter.svg" alt="" />
-          <a href="https://twitter.com/KeyQuality1" target="_blank"
-            >@KeyQuality1</a
           >
         </div>
       </div>

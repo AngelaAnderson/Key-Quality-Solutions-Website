@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xfe4dst.css" />
+    <link rel="shortcut icon" type="image/svg" href="/icons/favicon.svg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
@@ -81,21 +82,21 @@
         <div class="nav_bar">
           <a href="index.html" class="dropdownbtn_about">home</a>
           <div class="dropdown">
-            <a class="dropbtn">about us</a>
-            <div class="dropdown-content dropdown_about .dropdown_menu">
+            <a onclick="navFunction()" class="dropbtn">about us</a>
+            <div id="dropdown_about" class="dropdown-content dropdown_about">
               <a href="kqs_about.html">Mission & Values</a>
               <hr />
-              <a href="kqs_leadership">KQS Consultants</a>
+              <a href="kqs_leadership.html">KQS Consultants</a>
             </div>
           </div>
           <a href="services.html" class="dropbtn">services</a>
           <a href="blog.html" class="dropbtn">blog</a>
           <a href="contact.html">contact</a>
-          <div class="dropdown">
+          <div onclick="searchFunction()" class="dropdown">
             <img class="dropbtn" src="/icons/search.svg" alt="" />
-            <div class="dropdown-content dropdown_search .dropdown_menu">
-              <input type="text" placeholder="Search" />
-            </div>
+          </div>
+          <div id="dropdown_search" class="dropdown_search">
+            <input type="text" placeholder="Search" />
           </div>
         </div>
       </div>
@@ -116,7 +117,7 @@
 
     <section class="services_section">
       <h1>Our Services</h1>
-      <h4>Click on the categories below to see what services are included.</h4>
+      <h4>Click on the categories below to learn more about our service offerings.</h4>
       <div class="services">
         <div class="right_services">
           <div class="service_group" onclick="servicesFunction(this)">
@@ -124,9 +125,15 @@
               <img id="rightArrow" src="/icons/circled_arrow_down.svg" alt="" />
               <h6>Quality Management Systems</h4>
             </div>
-            <p>We know you want satisﬁed customers and sound long-term 
+            <p class="space_below">We know you want satisﬁed customers and sound long-term 
               strategies. We’ll help you establish the best possible procedures to achieve them.</p>
             <div id="hide_service" class="hide_service">
+                <p>We’ll help you group your processes, policies, and procedures into a Quality Management System 
+                  (QMS) that complies with both ICH 10, ISO 9001, and Good Manufacturing Practices (GMPs). We 
+                  specialize in document management, change control, product complaints, risk management 
+                  non-conformance and CAPA management. We offer support in interpretation of regulations, 
+                  conducting gap analysis, developing a product plan, designing agile digital quality systems
+                   and training your employees. </p>
                 <p class="bold">Offerings in this service category includes:  </p>
                 <div class="sub_offering_group">
                   <div class="list_one">
@@ -171,9 +178,15 @@
               <img id="rightArrow" src="/icons/circled_arrow_down.svg" alt="" />
               <h6>Supplier Management</h6>
             </div>
-            <p>KQS puts you in full control of your company’s operations by identifying every 
+            <p class="space_below">KQS puts you in full control of your company’s operations by identifying every 
               opportunity to streamline and improve its processes on the supply end.</p>
               <div id="hide_service" class="hide_service">
+                <p>Supplier management ensures you obtain the highest standard of service from your suppliers, 
+                  whether they are providing raw material or components, medical devices, outsourced testing, 
+                  or contract manufacturing. We assist with quality agreement, supplier documents, and supplier
+                   certification. We’ll help you ensure that all quality agreements with suppliers support the 
+                   needs of your business by offering seamless digital solutions for sharing and maintaining the 
+                   security of your data. </p>
                 <p class="bold">Offerings in this service category includes:  </p>
                 <div class="sub_offering_group">
                   <div class="list_one">
@@ -203,9 +216,17 @@
               <img id="rightArrow" src="/icons/circled_arrow_down.svg" alt="" />
               <h6>Daily Quality Operations</h6>
             </div>
-            <p>We will assess your production and apply clinical trial studies to enhance your market distribution and 
+            <p class="space_below ">We will assess your production and apply clinical trial studies to enhance your market distribution and 
               commercial operations.</p>
               <div id="hide_service" class="hide_service">
+                <p>Quality has to be built into products.  Quality ensures the consistency and reliability of delivering 
+                  safe, pure, and effective products to patients. We’ll offer virtual or on-site services to help you 
+                  oversee the product operation process. Our solutions allow you to approve raw material and components, 
+                  review batch records, track testing, sign documents, and validate all requirements for facilities, 
+                  aseptic techniques, environmental monitoring, and deviation investigations. Our digital systems 
+                  provide comprehensive batch record review and disposition, document review and approval, certificate 
+                  of analysis review, and a review of analytical test methods. You can also enact environmental 
+                  monitoring, aseptic gowning, and validation for all other processes, cleaning, and computerized systems. </p>
                 <p class="bold">We can establish: </p>
                 <div class="sub_offering_group">
                   <div class="list_one">
@@ -279,10 +300,18 @@
               <img id="rightArrow" src="/icons/circled_arrow_down.svg" alt="" />
               <h6>Inspection Readiness</h6>
             </div>
-            <p>Our comprehensive audits will diagnose critical areas for improvement and 
+            <p class="space_below ">Our comprehensive audits will diagnose critical areas for improvement and 
               serve as trial-runs that prepare you for your ofﬁcial audits and inspections.</p>
               <div id="hide_service" class="hide_service">
-                <p class="bold">Offerings in this service category includes:  </p>
+                <p>Inspections can be very stressful at each stage of the product lifecycle, from pre-approval 
+                  inspection to post-market product inspections. We’ll help you prepare for the U.S Food and 
+                  Drug Administration (FDA), Medicines and Healthcare Products Regulatory Agency (MHRA) and 
+                  the European Medicines Agency — along with all other regulatory authority inspections. We 
+                  provide trail-run internal and external audits, along with inspection readiness programs to 
+                  support cGMP, GLP, or GCP operations. We offer gap analysis and follow-ups to previous inspections, 
+                  along with preparation and training from industry experts familiar with the many demands of these 
+                  inspections entail. </p>
+                <p class="bold">Offerings in this service category includes:</p>
                 <div class="sub_offering_group">
                   <div class="list_one">
                     <div class="sub_pair">
@@ -316,9 +345,16 @@
               <img id="rightArrow" src="/icons/circled_arrow_down.svg" alt="" />
               <h6>Additional Services</h6>
             </div>
-            <p>Our comprehensive audits will diagnose critical areas for improvement and serve as 
-              trial-runs that prepare you for your ofﬁcial audits and inspections.</p>
+            <p>Supporting you at every stage of the project. With our extensive expertise and 
+              trusted service, we provide remarkable solutions.</p>
               <div id="hide_service" class="hide_service">
+                <p>Supporting a quality system requires qualified personnel that are well-trained 
+                  in understanding regulations and performing operations in compliance with Good 
+                  Manufacturing practices and Good Distribution Practices. We off employee training 
+                  in current GMPs, GLPs, and GCPs as applied to investigational and marketed product 
+                  operations. We provide additional pharmacovigilance support by conducting investigations 
+                  of adverse events with reported product lots, as well as validation of any supporting 
+                  department’s electronic systems that contain data shared with quality systems.</p>
                 <p class="bold">Offerings in this service category includes:  </p>
                 <div class="sub_offering_group">
                   <div class="list_one">
@@ -346,9 +382,9 @@
           <div class="service_group additionalServices">
             <h6>Ready to get started?</h6>
             <div class="ca_buttons">
-              <a class="contact_button" href="">Contact Us!</a>
+              <a class="contact_button" href="contact.html">Contact Us!</a>
               <p>or</p>
-              <a class="appointment_button" href="">Book Consultation!</a>
+              <a class="appointment_button" href="https://keyqualitysolutions.agilecrm.com/calendar/bookappointment " target="_blank">Book Consultation!</a>
             </div>
           </div>
         </div>
@@ -379,29 +415,59 @@
       <div class="footer_contact">
         <h5>contact</h5>
         <div class="pair">
-          <img src="/icons/mail.svg" alt="" />
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            ><img src="/icons/twitter.svg" alt=""
+          /></a>
+          <a href="https://twitter.com/KeyQuality1" target="_blank"
+            >@KeyQuality1</a
+          >
+        </div>
+
+        <div class="pair">
+          <a href="https://www.instagram.com/key2quality/" target="_blank"
+            ><img src="/icons/instagram.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/key2quality/" target="_blank"
+            >@Key2Quality</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+            target="_blank"
+            ><img src="/icons/facebook.svg" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/Key-Quality-Solutions-100946144862185/"
+            target="_blank"
+            >@KeyQualitySolutions</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            ><img src="/icons/linkedin.svg" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/kenyattascottoliphant/"
+            target="_blank"
+            >@KenyattaScottOliphant</a
+          >
+        </div>
+
+        <div class="pair">
+          <a
+            href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
+            target="_blank"
+            ><img src="/icons/mail.svg" alt=""
+          /></a>
           <a
             href="mailto:contactus@keyqualitysolutions.com?Subject=New%20Online%20Inquiery%20From%20KQS%20Website"
             target="_blank"
             >contactus@keyqualitysolutions.com</a
-          >
-        </div>
-        <div class="pair">
-          <img src="/icons/linkedin.svg" alt="" />
-          <a
-            href="https://www.linkedin.com/in/kenyattascottoliphant/"
-            target="_blank"
-            >@keyqualitysolutions</a
-          >
-        </div>
-        <div class="pair">
-          <img src="/icons/facebook.svg" alt="" />
-          <a href="" target="_blank">@keyqualitysolutions</a>
-        </div>
-        <div class="pair">
-          <img src="/icons/twitter.svg" alt="" />
-          <a href="https://twitter.com/KeyQuality1" target="_blank"
-            >@KeyQuality1</a
           >
         </div>
       </div>
