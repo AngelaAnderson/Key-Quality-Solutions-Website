@@ -8,19 +8,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Key Quality Solutions | KQS Blog
+      Key Quality Solutions | Augmented Reality and the Pharma Industry
     </title>
   </head>
   <body>
-    <header class="blue_header">
+    <header>
       <div class="mobile_header">
         <img
-          src="/icons/HL_KQS_Logo.svg"
+          src="/icons/KQSLogo_Horizontal_Dark.svg"
           alt="Key Quality Solutions Logo Horizontal png"
         />
         <div class="dropdown dropdown_mobile_menu">
+          <img
+            onclick="myFunction()"
+            class="mobile_menu_icon remove"
+            src="/icons/menu.svg"
+            alt=""
+          />
+
           <div
-            class="dropdown dropdown_mobile_menu menu_container white_menu_icon"
+            class="dropdown dropdown_mobile_menu menu_container"
             onclick="myFunction(); changeIcon(this)"
           >
             <div class="bar1"></div>
@@ -66,7 +73,7 @@
         <div class="logo_side">
           <img
             class="header_img"
-            src="/icons/kqs_header_logo_dark.svg"
+            src="/icons/kqs_header_logo_light.svg"
             alt=""
           />
         </div>
@@ -84,7 +91,7 @@
           <a href="blog.html" class="dropbtn">blog</a>
           <a href="contact.html">contact</a>
           <div onclick="searchFunction()" class="dropdown">
-            <img class="dropbtn" src="/icons/search_light.svg" alt="" />
+            <img class="dropbtn" src="/icons/search.svg" alt="" />
           </div>
           <div id="dropdown_search" class="dropdown_search">
             <input type="text" placeholder="Search" />
@@ -92,85 +99,53 @@
         </div>
       </div>
     </header>
-    <section class="search_bar">
-      <div class="search search_shortcut search_shortcut_blog">
-        <input type="text" placeholder="Search" />
-      </div>
-      <div class="filter">
-        <div onclick="filterFunction()" class="byType">
-          <div class="filter_group">
-            <p>Filter by Type</p>
-            <img src="/icons/down_arrow.svg" alt="" />
-          </div>
-          <div id="hide_type" class="hide_type">
-            <a class="filter_text" href="">Industry News</a>
-            <hr />
-            <a class="filter_text" href="">White Papers</a>
-          </div>
-        </div>
-        <div onclick="filterFunction()" class="byDate">
-          <div class="filter_group">
-            <p>Filter by Date</p>
-            <img src="/icons/down_arrow.svg" alt="" />
-          </div>
-          <div id="hide_date" class="hide_type">
-            <div class="pair">
-              <img src="/icons/sort_new.svg" alt="" />
-              <a class="filter_text" href="">New to Old</a>
-            </div>
-            <hr />
-            <div class="pair">
-              <img src="/icons/sort_old.svg" alt="" />
-              <a class="filter_text" href="">Old to New</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
+    <section class="header_about blog_post_img">
+      <img src="imgs/blog_img_3.svg" alt="" />
     </section>
 
-    <div class="body_copy">
-      <div class="left_side_blog">
-        <section class="blog_content">
-          <div class="heading">
-            <h3>Blog</h3>
-            <h2>Read Our Latest News on Digital Success in Pharma</h2>
-            <p>
-              Are you finding it challenging to determine which technologies to
-              adopt and which initiatives to scale up and how quickly? Keep
-              reading.
-            </p>
-          </div>
-          <div class="available_blog_posts">
-            <div class="post">
-              <a href="blog_post_1.html"
-                ><img src="/imgs/blog_img_1.svg" alt=""
+    <section class="body_copy body_copy_post">
+      <div class="left_side_post">
+        <section class="post_copy">
+          <h1>Augmented Reality and the Pharma Industry</h1>
+          <div class="details_post">
+            <p>April 4, 2020</p>
+            <div class="social_icons_blog">
+              <img src="/icons/Share.svg" alt="" />
+              <img src="/icons/Link.svg" alt="" />
+              <a
+                href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://www.website.com."
+                title="Share by Email"
+                ><img src="/icons/mail_blog.svg" alt=""
               /></a>
-              <a href="blog_post_1.html"
-                ><h3>Digital Innovations for Pharmaceutical Companies</h3></a
-              >
-            </div>
-
-            <div class="post">
-              <a href="blog_post_2.html"
-                ><img src="imgs/blog_img_2.svg" alt=""
-              /></a>
-              <a href="blog_post_2.html"><h3>Creating a Digital Factory</h3></a>
-            </div>
-
-            <div class="post">
-              <a href="blog_post_3.html"
-                ><img src="imgs/blog_img_3.svg" alt=""
-              /></a>
-              <a href="blog_post_3.html"
-                ><h3>Augmented Reality and the Pharma Industry</h3></a
-              >
             </div>
           </div>
+          <p>
+            Tandem 4.0 is a platform created specifically to immerse you in your
+            own operation. The technology uses image capture to create a
+            computer-generated environment that places users directly into the
+            laboratory, manufacturing line, or cleanroom environment they are
+            wishing to analyze.
+            <br />
+            <br />Wondering how a particular process or machine might be slowing
+            your operation? Attempting to revitalize the weak point in your
+            supply chain? Now you can enter a virtual version of the physical
+            setting and investigate yourself — while streaming your findings to
+            select colleagues on their tablets or smartphones.
+            <br />
+            <br />The visual representation serves as a digital twin to connect
+            and automate any process within your system, and experiment with
+            improved methods of design and production. <br />
+            <br />Tandem 4.0 is currently at the forefront of applied augmented
+            reality, but many tech innovators, both established companies and
+            fast-paced startups, are leaning into this tool as a doorway to
+            limitless possibilities.
+          </p>
         </section>
       </div>
 
-      <div class="right_side">
-        <section class="blog_shortcut_blog blog_shortcut">
+      <div class="right_side_post">
+        <section class="blog_shortcut_post">
           <h4>Recent Blog Posts:</h4>
           <hr />
           <div class="shortcut_blog_posts">
@@ -221,26 +196,8 @@
           </div>
         </section>
       </div>
-    </div>
+    </section>
     <script src="/javascript/main.js"></script>
-    <script
-      id="_agile_min_js"
-      async
-      type="text/javascript"
-      src="https://keyqualitysolutions.agilecrm.com/stats/min/agile-min.js"
-    ></script>
-    <script type="text/javascript">
-      var Agile_API = Agile_API || {};
-      Agile_API.on_after_load = function () {
-        _agile.set_account(
-          "e9qferqh9e48b23popq4aq2fm2",
-          "keyqualitysolutions",
-          false
-        );
-        _agile.track_page_view();
-        _agile_execute_web_rules();
-      };
-    </script>
   </body>
   <footer>
     <div class="footer_body">
